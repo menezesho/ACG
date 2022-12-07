@@ -42,61 +42,69 @@ namespace projeto_acg
 
         private void btSalvar_Click(object sender, EventArgs e)
         {//btSalvar
-            if (tbNovaSenha.Text == tbConfirmarNovaSenha.Text)
+            if (tbNovaSenha.Text != "" || tbConfirmarNovaSenha.Text != "")
             {
-                try
+                if (tbNovaSenha.Text == tbConfirmarNovaSenha.Text)
                 {
-
-                    Conexao conec = new Conexao();
-                    SqlConnection conexao = new SqlConnection(conec.conexaoBD());
-                    string sqlSelect1 = @"SELECT * FROM aluno WHERE matricula=@matricula AND senha=@senha";
-                    SqlCommand comandoSelect1 = new SqlCommand(sqlSelect1, conexao);
-
-                    comandoSelect1.Parameters.AddWithValue("@matricula", matriculaAtual);
-                    comandoSelect1.Parameters.AddWithValue("@senha", tbSenhaAtual.Text);
-
-
-                    conexao.Open();
-                    comandoSelect1.CommandText = sqlSelect1;
-                    comandoSelect1.ExecuteNonQuery();
-                    SqlDataReader dados1 = comandoSelect1.ExecuteReader();
-                    if (dados1.Read())
+                    try
                     {
-                        int id = (int)dados1["id"];
-                        conexao.Close();
 
-                        string sqlUpdate = @"UPDATE aluno SET senha=@senha WHERE id=@id";
-                        SqlCommand comandoUpdate = new SqlCommand(sqlUpdate, conexao);
+                        Conexao conec = new Conexao();
+                        SqlConnection conexao = new SqlConnection(conec.conexaoBD());
+                        string sqlSelect1 = @"SELECT * FROM aluno WHERE matricula=@matricula AND senha=@senha";
+                        SqlCommand comandoSelect1 = new SqlCommand(sqlSelect1, conexao);
 
-                        comandoUpdate.Parameters.AddWithValue("@senha", tbConfirmarNovaSenha.Text);
-                        comandoUpdate.Parameters.AddWithValue("@id", id);
+                        comandoSelect1.Parameters.AddWithValue("@matricula", matriculaAtual);
+                        comandoSelect1.Parameters.AddWithValue("@senha", tbSenhaAtual.Text);
+
 
                         conexao.Open();
-                        comandoUpdate.CommandText = sqlUpdate;
-                        comandoUpdate.ExecuteNonQuery();
-                        conexao.Close();
+                        comandoSelect1.CommandText = sqlSelect1;
+                        comandoSelect1.ExecuteNonQuery();
+                        SqlDataReader dados1 = comandoSelect1.ExecuteReader();
+                        if (dados1.Read())
+                        {
+                            int id = (int)dados1["id"];
+                            conexao.Close();
 
-                        tbSenhaAtual.Clear();
-                        tbNovaSenha.Clear();
-                        tbConfirmarNovaSenha.Clear();
-                        this.Close();
+                            string sqlUpdate = @"UPDATE aluno SET senha=@senha WHERE id=@id";
+                            SqlCommand comandoUpdate = new SqlCommand(sqlUpdate, conexao);
 
-                        MessageBox.Show("Senha alterada com sucesso!", "Alterar Senha", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            comandoUpdate.Parameters.AddWithValue("@senha", tbConfirmarNovaSenha.Text);
+                            comandoUpdate.Parameters.AddWithValue("@id", id);
+
+                            conexao.Open();
+                            comandoUpdate.CommandText = sqlUpdate;
+                            comandoUpdate.ExecuteNonQuery();
+                            conexao.Close();
+
+                            tbSenhaAtual.Clear();
+                            tbNovaSenha.Clear();
+                            tbConfirmarNovaSenha.Clear();
+                            this.Close();
+
+                            MessageBox.Show("Senha alterada com sucesso!", "Alterar Senha", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("A senha atual informada está incorreta.\nTente novamente!", "Alterar Senha", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            tbSenhaAtual.Focus();
+                        }
                     }
-                    else
+                    catch (Exception erro)
                     {
-                        MessageBox.Show("A senha atual informada está incorreta.\nTente novamente!", "Alterar Senha", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        tbSenhaAtual.Focus();
+                        MessageBox.Show(erro.Message, "Erro na conexão, tente novamente!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                catch (Exception erro)
+                else
                 {
-                    MessageBox.Show(erro.Message, "Erro na conexão, tente novamente!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("As senhas não correspondem.\nTente novamente!", "Alterar Senha", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tbNovaSenha.Focus();
                 }
             }
             else
             {
-                MessageBox.Show("As senhas não correspondem.\nTente novamente!", "Alterar Senha", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Preencha os campos vazios!", "Alterar Senha", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tbNovaSenha.Focus();
             }
         }

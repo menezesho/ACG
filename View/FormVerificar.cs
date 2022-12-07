@@ -94,7 +94,7 @@ namespace projeto_acg
                     else
                     {
                         horas = 0;
-                        tbhorastotais.Text = "0";
+                        tbhorastotais.Text = "0 Horas";
                     }
                 }
             }
