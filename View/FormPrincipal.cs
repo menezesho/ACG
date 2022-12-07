@@ -60,6 +60,12 @@ namespace projeto_acg.View
             Fea.ShowDialog();
         }
 
+        private void btAlterarSenha_Click(object sender, EventArgs e)
+        {//btAlterarSenha
+            FormAlterarSenha Fas = new FormAlterarSenha(matriculaAtual);
+            Fas.ShowDialog();
+        }
+
         private void lbsair_Click(object sender, EventArgs e)
         {//lbsair
             if (MessageBox.Show("Deseja mesmo sair do programa?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)

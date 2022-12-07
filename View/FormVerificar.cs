@@ -30,8 +30,7 @@ namespace projeto_acg
 
         private void btGerarRelatorio_Click(object sender, EventArgs e)
         {//btGerarRelatorio
-            FormRelatorioAlunos Fr = new FormRelatorioAlunos();
-            Fr.ShowDialog();
+
         }
 
         private void btFechar_Click(object sender, EventArgs e)
@@ -60,7 +59,8 @@ namespace projeto_acg
                     tbNome.Text = dados1["nome"].ToString();
                     conexao.Close();
 
-                    string sqlSelect2 = @"SELECT SUM(HORAS) AS 'total' FROM ENVIO JOIN ACG ON ACG.ID = ENVIO.ID_ACG WHERE ENVIO.ID_ALUNO = @id";
+
+                    string sqlSelect2 = @"SELECT ID_ALUNO FROM ENVIO WHERE ID_ALUNO = @id";
                     SqlCommand comandoSelect2 = new SqlCommand(sqlSelect2, conexao);
 
                     comandoSelect2.Parameters.AddWithValue("@id", idaluno);
@@ -71,13 +71,31 @@ namespace projeto_acg
                     SqlDataReader dados2 = comandoSelect2.ExecuteReader();
                     if (dados2.Read())
                     {
-                        horas = (int)dados2["total"];
-                        tbhorastotais.Text = dados2["total"].ToString() + " Horas";
                         conexao.Close();
 
+                        string sqlSelect3 = @"SELECT SUM(HORAS) AS 'total' FROM ENVIO JOIN ACG ON ACG.ID = ENVIO.ID_ACG WHERE ENVIO.ID_ALUNO = @id";
+                        SqlCommand comandoSelect3 = new SqlCommand(sqlSelect3, conexao);
+
+                        comandoSelect3.Parameters.AddWithValue("@id", idaluno);
+
+                        conexao.Open();
+                        comandoSelect3.CommandText = sqlSelect3;
+                        comandoSelect3.ExecuteNonQuery();
+                        SqlDataReader dados3 = comandoSelect3.ExecuteReader();
+                        if (dados3.Read())
+                        {
+                            horas = (int)dados3["total"];
+                            tbhorastotais.Text = dados3["total"].ToString() + " Horas";
+                            conexao.Close();
+                        }
+                        else
+                            MessageBox.Show("Matrícula não encontrada!\nInsira a mátrícula corretamente!", "Enviar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else
-                        MessageBox.Show("Matrícula não encontrada!\nInsira a mátrícula corretamente!", "Enviar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    {
+                        horas = 0;
+                        tbhorastotais.Text = "0";
+                    }
                 }
             }
             catch (Exception erro)

@@ -38,6 +38,7 @@ namespace projeto_acg.View
             this.btcadastraracg = new System.Windows.Forms.Button();
             this.btverificarsituacao = new System.Windows.Forms.Button();
             this.lbsair = new System.Windows.Forms.Label();
+            this.btAlterarSenha = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,10 +46,10 @@ namespace projeto_acg.View
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(526, 97);
+            this.pictureBox1.Location = new System.Drawing.Point(526, 88);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(394, 331);
+            this.pictureBox1.Size = new System.Drawing.Size(394, 373);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -61,7 +62,7 @@ namespace projeto_acg.View
             this.btenviaracg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btenviaracg.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.btenviaracg.ForeColor = System.Drawing.Color.White;
-            this.btenviaracg.Location = new System.Drawing.Point(205, 97);
+            this.btenviaracg.Location = new System.Drawing.Point(205, 88);
             this.btenviaracg.Margin = new System.Windows.Forms.Padding(2);
             this.btenviaracg.Name = "btenviaracg";
             this.btenviaracg.Size = new System.Drawing.Size(257, 59);
@@ -78,7 +79,7 @@ namespace projeto_acg.View
             this.bteditaraluno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bteditaraluno.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.bteditaraluno.ForeColor = System.Drawing.Color.White;
-            this.bteditaraluno.Location = new System.Drawing.Point(205, 369);
+            this.bteditaraluno.Location = new System.Drawing.Point(205, 360);
             this.bteditaraluno.Margin = new System.Windows.Forms.Padding(2);
             this.bteditaraluno.Name = "bteditaraluno";
             this.bteditaraluno.Size = new System.Drawing.Size(257, 59);
@@ -95,7 +96,7 @@ namespace projeto_acg.View
             this.bteditaracg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bteditaracg.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.bteditaracg.ForeColor = System.Drawing.Color.White;
-            this.bteditaracg.Location = new System.Drawing.Point(205, 301);
+            this.bteditaracg.Location = new System.Drawing.Point(205, 292);
             this.bteditaracg.Margin = new System.Windows.Forms.Padding(2);
             this.bteditaracg.Name = "bteditaracg";
             this.bteditaracg.Size = new System.Drawing.Size(257, 59);
@@ -112,7 +113,7 @@ namespace projeto_acg.View
             this.btcadastraracg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcadastraracg.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.btcadastraracg.ForeColor = System.Drawing.Color.White;
-            this.btcadastraracg.Location = new System.Drawing.Point(205, 233);
+            this.btcadastraracg.Location = new System.Drawing.Point(205, 224);
             this.btcadastraracg.Margin = new System.Windows.Forms.Padding(2);
             this.btcadastraracg.Name = "btcadastraracg";
             this.btcadastraracg.Size = new System.Drawing.Size(257, 59);
@@ -129,7 +130,7 @@ namespace projeto_acg.View
             this.btverificarsituacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btverificarsituacao.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.btverificarsituacao.ForeColor = System.Drawing.Color.White;
-            this.btverificarsituacao.Location = new System.Drawing.Point(205, 165);
+            this.btverificarsituacao.Location = new System.Drawing.Point(205, 156);
             this.btverificarsituacao.Margin = new System.Windows.Forms.Padding(2);
             this.btverificarsituacao.Name = "btverificarsituacao";
             this.btverificarsituacao.Size = new System.Drawing.Size(257, 59);
@@ -153,11 +154,29 @@ namespace projeto_acg.View
             this.lbsair.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbsair.Click += new System.EventHandler(this.lbsair_Click);
             // 
+            // btAlterarSenha
+            // 
+            this.btAlterarSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btAlterarSenha.BackColor = System.Drawing.Color.SteelBlue;
+            this.btAlterarSenha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btAlterarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAlterarSenha.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btAlterarSenha.ForeColor = System.Drawing.Color.White;
+            this.btAlterarSenha.Location = new System.Drawing.Point(270, 428);
+            this.btAlterarSenha.Margin = new System.Windows.Forms.Padding(2);
+            this.btAlterarSenha.Name = "btAlterarSenha";
+            this.btAlterarSenha.Size = new System.Drawing.Size(126, 33);
+            this.btAlterarSenha.TabIndex = 6;
+            this.btAlterarSenha.Text = "ALTERAR SENHA";
+            this.btAlterarSenha.UseVisualStyleBackColor = false;
+            this.btAlterarSenha.Click += new System.EventHandler(this.btAlterarSenha_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 540);
+            this.Controls.Add(this.btAlterarSenha);
             this.Controls.Add(this.lbsair);
             this.Controls.Add(this.btverificarsituacao);
             this.Controls.Add(this.btcadastraracg);
@@ -188,5 +207,6 @@ namespace projeto_acg.View
         internal Button btcadastraracg;
         internal Button btverificarsituacao;
         private Label lbsair;
+        internal Button btAlterarSenha;
     }
 }
