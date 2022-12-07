@@ -281,8 +281,9 @@ namespace projeto_acg
 
         private void btRelatorio_Click(object sender, EventArgs e)
         {//btRelatorio
-            FormRelatorioAlunos Fra = new FormRelatorioAlunos();
-            Fra.ShowDialog();
+            FormRelatorioAluno Fraluno = new FormRelatorioAluno();
+            
+            Fraluno.ShowDialog();
 
             //if (MessageBox.Show("Deseja gerar um relatório de todos os cadastros?", "Relatório", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             //{

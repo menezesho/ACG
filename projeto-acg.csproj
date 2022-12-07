@@ -83,6 +83,18 @@
     <Compile Include="DAO\AlunoDAO.cs" />
     <Compile Include="DAO\Conexao.cs" />
     <Compile Include="Class\Program.cs" />
+    <Compile Include="View\FormRelatorioAcg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormRelatorioAcg.Designer.cs">
+      <DependentUpon>FormRelatorioAcg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormRelatorioAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormRelatorioAluno.Designer.cs">
+      <DependentUpon>FormRelatorioAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormAlterarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,18 +144,19 @@
     <Compile Include="View\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormRelatorioAlunos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormRelatorioAlunos.Designer.cs">
-      <DependentUpon>FormRelatorioAlunos.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\FormVerificar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormVerificar.Designer.cs">
       <DependentUpon>FormVerificar.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormRelatorioAcg.resx">
+      <DependentUpon>FormRelatorioAcg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormRelatorioAluno.resx">
+      <DependentUpon>FormRelatorioAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relatorio-acgs.rdlc" />
     <EmbeddedResource Include="View\FormAlterarSenha.resx">
       <DependentUpon>FormAlterarSenha.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,7 +169,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="relatorio-alunos.rdlc" />
     <EmbeddedResource Include="View\FormCadAcg.resx">
       <DependentUpon>FormCadAcg.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,9 +190,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FormRelatorioAlunos.resx">
-      <DependentUpon>FormRelatorioAlunos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormVerificar.resx">
       <DependentUpon>FormVerificar.cs</DependentUpon>

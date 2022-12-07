@@ -262,7 +262,8 @@ namespace projeto_acg
 
         private void btrelatorio_Click(object sender, EventArgs e)
         {//btrelatorio
-            
+            FormRelatorioAcg Fracg = new FormRelatorioAcg();
+            Fracg.ShowDialog();
 
             //if (MessageBox.Show("Deseja gerar um relatório de todas as ACGs?", "Relatório", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             //{
