@@ -30,13 +30,18 @@ namespace projeto_acg
                 MessageBox.Show("Login de administrador efetuado com sucesso!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FormPrincipal Fp = new FormPrincipal();
                 matriculaAtual = mtbmatricula.Text;
+                Fp.btAlterarSenha.Enabled= false;
+                Fp.btAlterarSenha.BackColor = Color.LightGray;
                 Fp.btenviaracg.Enabled = false;
                 Fp.btverificarsituacao.Enabled = false;
                 Fp.btenviaracg.BackColor = Color.LightGray;
                 Fp.btverificarsituacao.BackColor = Color.LightGray;
                 Fp.btenviaracg.ForeColor = Color.GhostWhite;
                 Fp.btverificarsituacao.ForeColor = Color.GhostWhite;
-                this.Hide();
+                //this.Hide();
+                mtbmatricula.Clear();
+                mtbmatricula.Mask = "";
+                tbsenha.Clear();
                 Fp.ShowDialog();
             }
             else
@@ -68,7 +73,10 @@ namespace projeto_acg
 
                         MessageBox.Show("Login de aluno efetuado com sucesso!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         conexao.Close();
-                        this.Hide();
+                        //this.Hide();
+                        mtbmatricula.Clear();
+                        mtbmatricula.Mask = "";
+                        tbsenha.Clear();
                         Fp.ShowDialog();
                     }
                     else

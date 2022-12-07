@@ -126,6 +126,17 @@ namespace projeto_acg
                     try
                     {
                         SqlConnection conexao = new SqlConnection(conec.conexaoBD());
+
+                        string sql1 = @"DELETE FROM envio WHERE id_aluno=@id";
+                        SqlCommand comando1 = new SqlCommand(sql1, conexao);
+
+                        comando1.Parameters.AddWithValue("@id", tbid.Text);
+
+                        conexao.Open();
+                        comando1.CommandText = sql1;
+                        comando1.ExecuteNonQuery();
+                        conexao.Close();
+
                         string sql = @"DELETE FROM aluno WHERE id=@id";
                         SqlCommand comando = new SqlCommand(sql, conexao);
 
@@ -270,30 +281,33 @@ namespace projeto_acg
 
         private void btRelatorio_Click(object sender, EventArgs e)
         {//btRelatorio
-            if (MessageBox.Show("Deseja gerar um relatório de todos os cadastros?", "Relatório", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
-                SqlConnection conexao = new SqlConnection(conec.conexaoBD());
-                string endereco = "C:\\Users\\henry\\OneDrive\\03. UEMG S.I\\Matérias\\Semestre 04\\Programação II\\projeto-acg\\Relatório\\relatorio-cadastros.csv";
-                using (StreamWriter writer = new StreamWriter(endereco, false, Encoding.GetEncoding("iso-8859-15")))
-                {
-                    writer.WriteLine("ID;Nome;E-mail;Matrícula");
-                    using (SqlConnection conn = new SqlConnection(conec.conexaoBD()))
-                    {
-                        string query = "SELECT * FROM aluno";
-                        SqlCommand sqlComand = new SqlCommand(query, conn);
-                        conn.Open();
-                        using (IDataReader reader = sqlComand.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                writer.WriteLine(Convert.ToString(reader["Id"]) + ";" + Convert.ToString(reader["Nome"]) + ";" + Convert.ToString(reader["email"]) + ";" + Convert.ToString(reader["matricula"]));
-                            }
-                        }
-                        conn.Close();
-                    }
-                }
-                MessageBox.Show("Relatório gerado com sucesso!", "Gerar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            FormRelatorioAlunos Fra = new FormRelatorioAlunos();
+            Fra.ShowDialog();
+
+            //if (MessageBox.Show("Deseja gerar um relatório de todos os cadastros?", "Relatório", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            //{
+            //    SqlConnection conexao = new SqlConnection(conec.conexaoBD());
+            //    string endereco = "C:\\Users\\henry\\OneDrive\\03. UEMG S.I\\Matérias\\Semestre 04\\Programação II\\projeto-acg\\Relatório\\relatorio-cadastros.csv";
+            //    using (StreamWriter writer = new StreamWriter(endereco, false, Encoding.GetEncoding("iso-8859-15")))
+            //    {
+            //        writer.WriteLine("ID;Nome;E-mail;Matrícula");
+            //        using (SqlConnection conn = new SqlConnection(conec.conexaoBD()))
+            //        {
+            //            string query = "SELECT * FROM aluno";
+            //            SqlCommand sqlComand = new SqlCommand(query, conn);
+            //            conn.Open();
+            //            using (IDataReader reader = sqlComand.ExecuteReader())
+            //            {
+            //                while (reader.Read())
+            //                {
+            //                    writer.WriteLine(Convert.ToString(reader["Id"]) + ";" + Convert.ToString(reader["Nome"]) + ";" + Convert.ToString(reader["email"]) + ";" + Convert.ToString(reader["matricula"]));
+            //                }
+            //            }
+            //            conn.Close();
+            //        }
+            //    }
+            //    MessageBox.Show("Relatório gerado com sucesso!", "Gerar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
         }
 
         #region Máscara

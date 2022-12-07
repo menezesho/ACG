@@ -83,10 +83,10 @@
     <Compile Include="DAO\AlunoDAO.cs" />
     <Compile Include="DAO\Conexao.cs" />
     <Compile Include="Class\Program.cs" />
-    <Compile Include="FormAlterarSenha.cs">
+    <Compile Include="View\FormAlterarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAlterarSenha.Designer.cs">
+    <Compile Include="View\FormAlterarSenha.Designer.cs">
       <DependentUpon>FormAlterarSenha.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -144,7 +144,7 @@
     <Compile Include="View\FormVerificar.Designer.cs">
       <DependentUpon>FormVerificar.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormAlterarSenha.resx">
+    <EmbeddedResource Include="View\FormAlterarSenha.resx">
       <DependentUpon>FormAlterarSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

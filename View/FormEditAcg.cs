@@ -104,6 +104,17 @@ namespace projeto_acg
                     try
                     {
                         SqlConnection conexao = new SqlConnection(conec.conexaoBD());
+
+                        string sql1 = @"DELETE FROM envio WHERE id_acg=@id";
+                        SqlCommand comando1 = new SqlCommand(sql1, conexao);
+
+                        comando1.Parameters.AddWithValue("@id", tbid.Text);
+
+                        conexao.Open();
+                        comando1.CommandText = sql1;
+                        comando1.ExecuteNonQuery();
+                        conexao.Close();
+
                         string sql = @"DELETE FROM acg WHERE id=@id";
                         SqlCommand comando = new SqlCommand(sql, conexao);
 
@@ -251,8 +262,7 @@ namespace projeto_acg
 
         private void btrelatorio_Click(object sender, EventArgs e)
         {//btrelatorio
-            FormRelatorioAlunos Fra = new FormRelatorioAlunos();
-            Fra.ShowDialog();
+            
 
             //if (MessageBox.Show("Deseja gerar um relatório de todas as ACGs?", "Relatório", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             //{
