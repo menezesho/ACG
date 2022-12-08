@@ -41,7 +41,6 @@ namespace projeto_acg
             this.tbhorasfaltantes = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbsair = new System.Windows.Forms.Label();
-            this.btGerarRelatorio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,7 +79,7 @@ namespace projeto_acg
             this.lbsituacao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbsituacao.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbsituacao.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbsituacao.Location = new System.Drawing.Point(523, 356);
+            this.lbsituacao.Location = new System.Drawing.Point(133, 395);
             this.lbsituacao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbsituacao.Name = "lbsituacao";
             this.lbsituacao.Size = new System.Drawing.Size(394, 33);
@@ -184,37 +183,19 @@ namespace projeto_acg
             this.lbsair.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbsair.Click += new System.EventHandler(this.btFechar_Click);
             // 
-            // btGerarRelatorio
-            // 
-            this.btGerarRelatorio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btGerarRelatorio.BackColor = System.Drawing.Color.SteelBlue;
-            this.btGerarRelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btGerarRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btGerarRelatorio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btGerarRelatorio.ForeColor = System.Drawing.Color.White;
-            this.btGerarRelatorio.Location = new System.Drawing.Point(182, 396);
-            this.btGerarRelatorio.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btGerarRelatorio.Name = "btGerarRelatorio";
-            this.btGerarRelatorio.Size = new System.Drawing.Size(297, 32);
-            this.btGerarRelatorio.TabIndex = 38;
-            this.btGerarRelatorio.Text = "GERAR RELATÓRIO";
-            this.btGerarRelatorio.UseVisualStyleBackColor = false;
-            this.btGerarRelatorio.Click += new System.EventHandler(this.btGerarRelatorio_Click);
-            // 
             // FormVerificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 540);
+            this.Controls.Add(this.lbsituacao);
             this.Controls.Add(this.lbsair);
             this.Controls.Add(this.tbNome);
-            this.Controls.Add(this.btGerarRelatorio);
             this.Controls.Add(this.tbhorasfaltantes);
             this.Controls.Add(this.tbhorastotais);
             this.Controls.Add(this.lbnome);
             this.Controls.Add(this.lbhorastotais);
             this.Controls.Add(this.lbhorasfaltantes);
-            this.Controls.Add(this.lbsituacao);
             this.Controls.Add(this.lbcadastro);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -242,6 +223,5 @@ namespace projeto_acg
         private TextBox tbhorasfaltantes;
         private PictureBox pictureBox1;
         private Label lbsair;
-        private Button btGerarRelatorio;
     }
 }
