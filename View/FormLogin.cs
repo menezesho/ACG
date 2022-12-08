@@ -37,7 +37,7 @@ namespace projeto_acg
                 Fp.btenviaracg.BackColor = Color.LightGray;
                 Fp.btverificarsituacao.BackColor = Color.LightGray;
                 Fp.btenviaracg.ForeColor = Color.GhostWhite;
-                Fp.btverificarsituacao.ForeColor = Color.GhostWhite;
+                Fp.btAlterarSenha.ForeColor = Color.GhostWhite;
                 //this.Hide();
                 mtbmatricula.Clear();
                 mtbmatricula.Mask = "";
@@ -61,15 +61,18 @@ namespace projeto_acg
                     {
                         FormPrincipal Fp = new FormPrincipal(mtbmatricula.Text);
 
+                        Fp.btRevisar.Enabled = false;
                         Fp.btcadastraracg.Enabled = false;
                         Fp.bteditaracg.Enabled = false;
                         Fp.bteditaraluno.Enabled = false;
+                        Fp.btRevisar.BackColor = Color.LightGray;
                         Fp.btcadastraracg.BackColor = Color.LightGray;
                         Fp.bteditaracg.BackColor = Color.LightGray;
                         Fp.bteditaraluno.BackColor = Color.LightGray;
                         Fp.btcadastraracg.ForeColor = Color.GhostWhite;
                         Fp.bteditaracg.ForeColor = Color.GhostWhite;
                         Fp.bteditaraluno.ForeColor = Color.GhostWhite;
+
 
                         MessageBox.Show("Login de aluno efetuado com sucesso!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         conexao.Close();

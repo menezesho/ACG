@@ -94,7 +94,7 @@ namespace projeto_acg
             this.lbhorasfaltantes.AutoSize = true;
             this.lbhorasfaltantes.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.lbhorasfaltantes.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbhorasfaltantes.Location = new System.Drawing.Point(308, 214);
+            this.lbhorasfaltantes.Location = new System.Drawing.Point(293, 214);
             this.lbhorasfaltantes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbhorasfaltantes.Name = "lbhorasfaltantes";
             this.lbhorasfaltantes.Size = new System.Drawing.Size(81, 25);
@@ -107,7 +107,7 @@ namespace projeto_acg
             this.lbhorastotais.AutoSize = true;
             this.lbhorastotais.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.lbhorastotais.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbhorastotais.Location = new System.Drawing.Point(130, 214);
+            this.lbhorastotais.Location = new System.Drawing.Point(145, 214);
             this.lbhorastotais.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbhorastotais.Name = "lbhorastotais";
             this.lbhorastotais.Size = new System.Drawing.Size(53, 25);
@@ -138,7 +138,7 @@ namespace projeto_acg
             this.tbhorastotais.Location = new System.Drawing.Point(104, 241);
             this.tbhorastotais.Margin = new System.Windows.Forms.Padding(2);
             this.tbhorastotais.Name = "tbhorastotais";
-            this.tbhorastotais.Size = new System.Drawing.Size(105, 29);
+            this.tbhorastotais.Size = new System.Drawing.Size(135, 29);
             this.tbhorastotais.TabIndex = 1;
             this.tbhorastotais.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -150,10 +150,10 @@ namespace projeto_acg
             this.tbhorasfaltantes.Enabled = false;
             this.tbhorasfaltantes.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbhorasfaltantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbhorasfaltantes.Location = new System.Drawing.Point(296, 241);
+            this.tbhorasfaltantes.Location = new System.Drawing.Point(266, 241);
             this.tbhorasfaltantes.Margin = new System.Windows.Forms.Padding(2);
             this.tbhorasfaltantes.Name = "tbhorasfaltantes";
-            this.tbhorasfaltantes.Size = new System.Drawing.Size(105, 29);
+            this.tbhorasfaltantes.Size = new System.Drawing.Size(135, 29);
             this.tbhorasfaltantes.TabIndex = 2;
             this.tbhorasfaltantes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

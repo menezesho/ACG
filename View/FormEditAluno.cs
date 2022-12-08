@@ -265,7 +265,7 @@ namespace projeto_acg
         {//lbbuscar
 
             SqlConnection conexao = new SqlConnection(conec.conexaoBD());
-            string sql = @"SELECT id AS ID, nome as Nome, email as 'E-mail', matricula as Matrícula, senha as Senha FROM aluno WHERE nome LIKE @nome ORDER BY nome";
+            string sql = @"SELECT id AS ID, nome as Nome, email as 'E-mail', matricula as Matrícula, senha as Senha FROM aluno WHERE nome LIKE @nome OR matricula LIKE @nome ORDER BY nome";
             SqlCommand comando = new SqlCommand(sql, conexao);
 
             comando.Parameters.AddWithValue("@nome", "%" + tbbusca.Text + "%");

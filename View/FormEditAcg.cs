@@ -247,7 +247,7 @@ namespace projeto_acg
         {//lbbuscar
 
             SqlConnection conexao = new SqlConnection(conec.conexaoBD());
-            string sql = @"SELECT id AS ID, nome as Nome, horas as Horas, modalidade as Modalidade, tipo as Tipo FROM acg WHERE nome LIKE @nome ORDER BY nome";
+            string sql = @"SELECT id AS ID, nome as Nome, horas as Horas, modalidade as Modalidade, tipo as Tipo FROM acg WHERE nome LIKE @nome OR tipo LIKE @nome ORDER BY nome";
             SqlCommand comando = new SqlCommand(sql, conexao);
 
             comando.Parameters.AddWithValue("@nome", "%" + tbbusca.Text + "%");

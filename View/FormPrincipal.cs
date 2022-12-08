@@ -66,6 +66,12 @@ namespace projeto_acg.View
             Fas.ShowDialog();
         }
 
+        private void btRevisar_Click(object sender, EventArgs e)
+        {//btRevisar
+            FormRevisao Fr = new FormRevisao();
+            Fr.ShowDialog();
+        }
+
         private void lbsair_Click(object sender, EventArgs e)
         {//lbsair
             if (MessageBox.Show("Deseja mesmo sair do programa?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)

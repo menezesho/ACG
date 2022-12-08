@@ -301,10 +301,10 @@ namespace projeto_acg
             this.btsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btsalvar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btsalvar.ForeColor = System.Drawing.Color.White;
-            this.btsalvar.Location = new System.Drawing.Point(55, 448);
+            this.btsalvar.Location = new System.Drawing.Point(163, 412);
             this.btsalvar.Margin = new System.Windows.Forms.Padding(2);
             this.btsalvar.Name = "btsalvar";
-            this.btsalvar.Size = new System.Drawing.Size(321, 32);
+            this.btsalvar.Size = new System.Drawing.Size(213, 32);
             this.btsalvar.TabIndex = 9;
             this.btsalvar.Text = "SALVAR";
             this.btsalvar.UseVisualStyleBackColor = false;
@@ -436,15 +436,15 @@ namespace projeto_acg
             // btrelatorio
             // 
             this.btrelatorio.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btrelatorio.BackColor = System.Drawing.Color.GhostWhite;
+            this.btrelatorio.BackColor = System.Drawing.Color.SteelBlue;
             this.btrelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btrelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btrelatorio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btrelatorio.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btrelatorio.Location = new System.Drawing.Point(163, 412);
+            this.btrelatorio.ForeColor = System.Drawing.Color.White;
+            this.btrelatorio.Location = new System.Drawing.Point(55, 448);
             this.btrelatorio.Margin = new System.Windows.Forms.Padding(2);
             this.btrelatorio.Name = "btrelatorio";
-            this.btrelatorio.Size = new System.Drawing.Size(213, 32);
+            this.btrelatorio.Size = new System.Drawing.Size(321, 32);
             this.btrelatorio.TabIndex = 8;
             this.btrelatorio.Text = "GERAR RELATÓRIO";
             this.btrelatorio.UseVisualStyleBackColor = false;

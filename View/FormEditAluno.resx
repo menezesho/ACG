@@ -137,18 +137,16 @@
   </data>
   <data name="bteditar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAl1JREFUWEft
-        l72L1EAYxhf8B6xV/CiFKxS1EZHj3Jms9qdXKPgfqAiCWmwyiZ1grxaWIh5yOzMeqHBXi6hY2HilvQci
-        IojnO9kn2cxuJl+bPTm8Hzwked/MO08+Zibp7LLjmfdf7OWh7rchT7x84IVqLVakrqOL6sRmhPpG2pqF
-        mJDv0VU1eCB9NN7kQq63oOTifmO75QXyC7orZ2RIriM0FUNTVM/UDdVGbVOzNBQf1zU1a0OGWqaKDHmh
-        vkaj5aZTYnIU5RkyZE2xoODiXYaMmaRAkWgU3UKTGJchQ9bUwt3lQwjbuAydE4NTFP9I+lygTzxSp9Ek
-        JjVUIuccVfTImkB34cl453nqCbWEJjZtGzITbS+U8y6lhmgfTWzaNlTGrqEyGhvqipXjNKTf0kv6obn0
-        U5RLaWzITHpJ42l03l8+gJIxSZz5+hhCNkWPzEx6ZOxOY0X6CkqlmDvDhL6Kw0m2+x0q5b82xPyVk/Si
-        38BhPttpiAsth32pdyyUFxC2KTLUDdVR7qu5OjJLB5pbeEJfhJlEf3g4OIL0CJchJtTlsQJV9RUlLChu
-        vg5G54Wyj5SNyxDFL1kFqmvii5Bq3bbP0RtITVL0yBYiub/bHxyso8XFZ3vQPMbUoNq/soby5qeUIkNt
-        QO/OI9T/DkOvkcpnloZ4pM/CRKpuNDiDdD6pIVoMEWoNFqj7MPIj3gbyIVJuaM1pZRFNlbkwHqjHmdxP
-        5r/ah5Sb4b99tQ/zitpEaRrq8rmJ0RSyRtsTCFej568eNivxtMpOjHT334z/Jv1T+D01h92dRKfzF4Yq
-        QL+q7xLlAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAABGdBTUEAALGPC/xhBQAAAdVJREFUWEft
+        lr1Kw1AUx/sIPoKP4BtYlNSODj6Agzgp+Aj5cHMRFF0dnHRQTKogQqujIIqgax1CR5Olczz/cO7tTYzp
+        jdykS39waHvuvae/3q+0NacqbftqwXJvlvlj80Cg4wWvHTdIOo5vc7o5MgIILzjjpmb4JeAGMXLc3Az4
+        1ULAcoMvy+4tcVNzzHQGQNfz23IWnN4hp/+N5fY2aTb7lWbTpAQERC2KSFsk3ZSTgUNOV+bxY3S+cXAv
+        6oiIuvbdIncpR92YmBlOa/PwHl4mxGcYJXmRChL+uhiEKeW0FvQDdrdOBsnoewyPjEilWrgdpXmFmYCA
+        GJcX2T592uFu08HmoSKRKKZ7RFUBEULk+nnY527T4WWQArqno0hAhH3xss/dpoMNQ4OkAMWbziyUCaCN
+        u+lBA+SJwHtOl2JUANDAmAvEnCrFuACYFPEHnPqTWgQAnpZcKCrbC7UJACqgPL6LL5VaBQDfD2nBoqNZ
+        uwDgIyqKZk5HIwJAvarX3GCP0ymUC+WXqlGXAEJ90lmOv6q2yTApgPXPFM/9tadTc5RpRxgVUDYjIr8M
+        gPJiKcJUyLtd4SYzlO0DgKWgOMYrp8yDL2YJrau6NrAkM/lbP0fSav0A34RqGC1GSWQAAAAASUVORK5C
+        YII=
 </value>
   </data>
   <data name="lbsair.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

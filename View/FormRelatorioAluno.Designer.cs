@@ -31,13 +31,23 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRelatorioAluno));
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.bD_ACGDataSet = new projeto_acg.BD_ACGDataSet();
             this.aLUNOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bD_ACGDataSet = new projeto_acg.BD_ACGDataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.aLUNOTableAdapter = new projeto_acg.BD_ACGDataSetTableAdapters.ALUNOTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_ACGDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aLUNOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_ACGDataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // aLUNOBindingSource
+            // 
+            this.aLUNOBindingSource.DataMember = "ALUNO";
+            this.aLUNOBindingSource.DataSource = this.bD_ACGDataSet;
+            // 
+            // bD_ACGDataSet
+            // 
+            this.bD_ACGDataSet.DataSetName = "BD_ACGDataSet";
+            this.bD_ACGDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -50,16 +60,6 @@
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(1084, 540);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // bD_ACGDataSet
-            // 
-            this.bD_ACGDataSet.DataSetName = "BD_ACGDataSet";
-            this.bD_ACGDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // aLUNOBindingSource
-            // 
-            this.aLUNOBindingSource.DataMember = "ALUNO";
-            this.aLUNOBindingSource.DataSource = this.bD_ACGDataSet;
             // 
             // aLUNOTableAdapter
             // 
@@ -78,8 +78,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relatório";
             this.Load += new System.EventHandler(this.FormRelatorioAluno_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bD_ACGDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aLUNOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_ACGDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

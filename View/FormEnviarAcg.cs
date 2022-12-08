@@ -114,7 +114,7 @@ namespace projeto_acg
                         else
                         {
                             conexao.Close();
-                            string sqlInsert = @"INSERT INTO envio VALUES (@idacg, @idaluno)";
+                            string sqlInsert = @"INSERT INTO envio VALUES (@idacg, @idaluno, 0)";
                             SqlCommand comandoInsert = new SqlCommand(sqlInsert, conexao);
 
                             comandoInsert.Parameters.AddWithValue("@idacg", cbnome.SelectedValue);
@@ -123,7 +123,7 @@ namespace projeto_acg
                             conexao.Open();
                             comandoInsert.CommandText = sqlInsert;
                             comandoInsert.ExecuteNonQuery();
-                            MessageBox.Show("Envio efetuado com sucesso!", "Enviar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Envio efetuado com sucesso!\nSua solicitação de envio estará em análise.\nAssim que o responsável aceitar este envio, suas horas serão contabilizadas!", "Enviar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             conexao.Close();
                         }
                     }

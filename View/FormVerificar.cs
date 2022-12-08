@@ -60,7 +60,7 @@ namespace projeto_acg
                     conexao.Close();
 
 
-                    string sqlSelect2 = @"SELECT ID_ALUNO FROM ENVIO WHERE ID_ALUNO = @id";
+                    string sqlSelect2 = @"SELECT ID_ALUNO FROM ENVIO WHERE ID_ALUNO = @id AND ENVIO.ACEITO = 1";
                     SqlCommand comandoSelect2 = new SqlCommand(sqlSelect2, conexao);
 
                     comandoSelect2.Parameters.AddWithValue("@id", idaluno);
@@ -73,7 +73,7 @@ namespace projeto_acg
                     {
                         conexao.Close();
 
-                        string sqlSelect3 = @"SELECT SUM(HORAS) AS 'total' FROM ENVIO JOIN ACG ON ACG.ID = ENVIO.ID_ACG WHERE ENVIO.ID_ALUNO = @id";
+                        string sqlSelect3 = @"SELECT SUM(HORAS) AS 'total' FROM ENVIO JOIN ACG ON ACG.ID = ENVIO.ID_ACG WHERE ENVIO.ID_ALUNO = @id AND ENVIO.ACEITO = 1";
                         SqlCommand comandoSelect3 = new SqlCommand(sqlSelect3, conexao);
 
                         comandoSelect3.Parameters.AddWithValue("@id", idaluno);
