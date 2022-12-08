@@ -78,9 +78,9 @@ namespace projeto_acg.View
                 Close();
         }
 
-        private void FormPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            Program.formLogin.Show();
         }
     }
 }

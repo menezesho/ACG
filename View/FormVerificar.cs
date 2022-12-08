@@ -85,7 +85,7 @@ namespace projeto_acg
                         if (dados3.Read())
                         {
                             horas = (int)dados3["total"];
-                            tbhorastotais.Text = dados3["total"].ToString() + " Horas";
+                            tbhorastotais.Text = dados3["total"].ToString() + " horas totais";
                             conexao.Close();
                         }
                         else
@@ -94,7 +94,7 @@ namespace projeto_acg
                     else
                     {
                         horas = 0;
-                        tbhorastotais.Text = "0 Horas";
+                        tbhorastotais.Text = "0 horas totais";
                     }
                 }
             }
@@ -104,11 +104,11 @@ namespace projeto_acg
             }
 
             aux = h - horas;
-            tbhorasfaltantes.Text = aux.ToString() + " Horas";
+            tbhorasfaltantes.Text = aux.ToString() + " horas faltantes";
             if (aux <= 0)
             {
                 lbsituacao.Text = "Parabéns, você está apto com " + horas.ToString() + " horas enviadas!";
-                tbhorasfaltantes.Text = "0 Horas";
+                tbhorasfaltantes.Text = "0 horas faltantes";
                 lbsituacao.ForeColor = Color.MediumSeaGreen;
             }
             else

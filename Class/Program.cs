@@ -12,12 +12,13 @@ namespace projeto_acg
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
+        public static FormLogin formLogin;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(formLogin = new FormLogin());
         }
     }
 }

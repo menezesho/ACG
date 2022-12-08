@@ -50,7 +50,7 @@ namespace projeto_acg.View
             this.pictureBox1.Location = new System.Drawing.Point(639, 158);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(394, 222);
+            this.pictureBox1.Size = new System.Drawing.Size(394, 190);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -158,11 +158,11 @@ namespace projeto_acg.View
             // btAlterarSenha
             // 
             this.btAlterarSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btAlterarSenha.BackColor = System.Drawing.Color.White;
+            this.btAlterarSenha.BackColor = System.Drawing.Color.SteelBlue;
             this.btAlterarSenha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btAlterarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAlterarSenha.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.btAlterarSenha.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btAlterarSenha.ForeColor = System.Drawing.Color.White;
             this.btAlterarSenha.Image = ((System.Drawing.Image)(resources.GetObject("btAlterarSenha.Image")));
             this.btAlterarSenha.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btAlterarSenha.Location = new System.Drawing.Point(249, 357);
@@ -188,7 +188,7 @@ namespace projeto_acg.View
             this.btRevisar.Name = "btRevisar";
             this.btRevisar.Size = new System.Drawing.Size(257, 59);
             this.btRevisar.TabIndex = 19;
-            this.btRevisar.Text = "REVISAR ENVIOS";
+            this.btRevisar.Text = "VALIDAR ENVIOS";
             this.btRevisar.UseVisualStyleBackColor = false;
             this.btRevisar.Click += new System.EventHandler(this.btRevisar_Click);
             // 
@@ -210,10 +210,10 @@ namespace projeto_acg.View
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(1100, 579);
             this.Name = "FormPrincipal";
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

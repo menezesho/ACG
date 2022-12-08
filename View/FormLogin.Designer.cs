@@ -78,12 +78,12 @@ namespace projeto_acg
             // 
             this.lbsenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbsenha.AutoSize = true;
-            this.lbsenha.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbsenha.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbsenha.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbsenha.Location = new System.Drawing.Point(114, 261);
+            this.lbsenha.Location = new System.Drawing.Point(116, 265);
             this.lbsenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbsenha.Name = "lbsenha";
-            this.lbsenha.Size = new System.Drawing.Size(64, 25);
+            this.lbsenha.Size = new System.Drawing.Size(54, 21);
             this.lbsenha.TabIndex = 10;
             this.lbsenha.Text = "Senha";
             // 
@@ -91,12 +91,12 @@ namespace projeto_acg
             // 
             this.lbmatricula.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbmatricula.AutoSize = true;
-            this.lbmatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbmatricula.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbmatricula.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbmatricula.Location = new System.Drawing.Point(114, 200);
+            this.lbmatricula.Location = new System.Drawing.Point(116, 204);
             this.lbmatricula.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbmatricula.Name = "lbmatricula";
-            this.lbmatricula.Size = new System.Drawing.Size(94, 25);
+            this.lbmatricula.Size = new System.Drawing.Size(78, 21);
             this.lbmatricula.TabIndex = 8;
             this.lbmatricula.Text = "Matrícula";
             // 
@@ -133,9 +133,9 @@ namespace projeto_acg
             // lbinfo
             // 
             this.lbinfo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbinfo.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lbinfo.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lbinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbinfo.Location = new System.Drawing.Point(114, 396);
+            this.lbinfo.Location = new System.Drawing.Point(114, 406);
             this.lbinfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbinfo.Name = "lbinfo";
             this.lbinfo.Size = new System.Drawing.Size(237, 18);
@@ -147,9 +147,9 @@ namespace projeto_acg
             // 
             this.lbprimeiroacesso.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbprimeiroacesso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbprimeiroacesso.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lbprimeiroacesso.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.lbprimeiroacesso.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbprimeiroacesso.Location = new System.Drawing.Point(114, 416);
+            this.lbprimeiroacesso.Location = new System.Drawing.Point(114, 426);
             this.lbprimeiroacesso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbprimeiroacesso.Name = "lbprimeiroacesso";
             this.lbprimeiroacesso.Size = new System.Drawing.Size(237, 27);
@@ -177,7 +177,6 @@ namespace projeto_acg
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

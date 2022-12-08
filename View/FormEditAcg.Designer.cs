@@ -31,9 +31,9 @@ namespace projeto_acg
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditAcg));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btrelatorio = new System.Windows.Forms.Button();
             this.lbbuscar = new System.Windows.Forms.Label();
             this.tbbusca = new System.Windows.Forms.TextBox();
@@ -55,7 +55,6 @@ namespace projeto_acg
             this.tbtipo = new System.Windows.Forms.TextBox();
             this.lbtipo = new System.Windows.Forms.Label();
             this.lbmodalidade = new System.Windows.Forms.Label();
-            this.lbEditar = new System.Windows.Forms.Label();
             this.btexcluir = new System.Windows.Forms.Button();
             this.btsalvar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgacg)).BeginInit();
@@ -72,7 +71,7 @@ namespace projeto_acg
             this.btrelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btrelatorio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btrelatorio.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btrelatorio.Location = new System.Drawing.Point(52, 445);
+            this.btrelatorio.Location = new System.Drawing.Point(50, 451);
             this.btrelatorio.Margin = new System.Windows.Forms.Padding(2);
             this.btrelatorio.Name = "btrelatorio";
             this.btrelatorio.Size = new System.Drawing.Size(321, 32);
@@ -86,12 +85,12 @@ namespace projeto_acg
             this.lbbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbbuscar.AutoSize = true;
-            this.lbbuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbbuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbbuscar.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbbuscar.Location = new System.Drawing.Point(401, 106);
+            this.lbbuscar.Location = new System.Drawing.Point(405, 111);
             this.lbbuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbbuscar.Name = "lbbuscar";
-            this.lbbuscar.Size = new System.Drawing.Size(61, 25);
+            this.lbbuscar.Size = new System.Drawing.Size(52, 21);
             this.lbbuscar.TabIndex = 71;
             this.lbbuscar.Text = "Busca";
             // 
@@ -102,11 +101,11 @@ namespace projeto_acg
             this.tbbusca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbbusca.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbbusca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbbusca.Location = new System.Drawing.Point(467, 103);
+            this.tbbusca.Location = new System.Drawing.Point(462, 109);
             this.tbbusca.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbbusca.MaxLength = 100;
             this.tbbusca.Name = "tbbusca";
-            this.tbbusca.Size = new System.Drawing.Size(567, 29);
+            this.tbbusca.Size = new System.Drawing.Size(570, 29);
             this.tbbusca.TabIndex = 10;
             this.tbbusca.TextChanged += new System.EventHandler(this.lbbusca_Click);
             // 
@@ -129,12 +128,12 @@ namespace projeto_acg
             // 
             this.lbtodos.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbtodos.AutoSize = true;
-            this.lbtodos.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lbtodos.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.lbtodos.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbtodos.Location = new System.Drawing.Point(580, 47);
+            this.lbtodos.Location = new System.Drawing.Point(561, 48);
             this.lbtodos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbtodos.Name = "lbtodos";
-            this.lbtodos.Size = new System.Drawing.Size(280, 32);
+            this.lbtodos.Size = new System.Drawing.Size(315, 37);
             this.lbtodos.TabIndex = 69;
             this.lbtodos.Text = "TODOS OS CADASTROS";
             this.lbtodos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -148,36 +147,36 @@ namespace projeto_acg
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgacg.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgacg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgacg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgacg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgacg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgacg.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgacg.Location = new System.Drawing.Point(406, 138);
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgacg.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dgacg.Location = new System.Drawing.Point(404, 144);
             this.dgacg.Margin = new System.Windows.Forms.Padding(2);
             this.dgacg.MultiSelect = false;
             this.dgacg.Name = "dgacg";
             this.dgacg.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgacg.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgacg.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgacg.RowHeadersVisible = false;
             this.dgacg.RowHeadersWidth = 51;
             this.dgacg.RowTemplate.Height = 29;
@@ -196,7 +195,7 @@ namespace projeto_acg
             this.bteditar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.bteditar.ForeColor = System.Drawing.Color.SteelBlue;
             this.bteditar.Image = ((System.Drawing.Image)(resources.GetObject("bteditar.Image")));
-            this.bteditar.Location = new System.Drawing.Point(106, 373);
+            this.bteditar.Location = new System.Drawing.Point(104, 379);
             this.bteditar.Margin = new System.Windows.Forms.Padding(2);
             this.bteditar.Name = "bteditar";
             this.bteditar.Size = new System.Drawing.Size(50, 68);
@@ -212,7 +211,7 @@ namespace projeto_acg
             this.btcancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btcancelar.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btcancelar.Location = new System.Drawing.Point(160, 373);
+            this.btcancelar.Location = new System.Drawing.Point(158, 379);
             this.btcancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btcancelar.Name = "btcancelar";
             this.btcancelar.Size = new System.Drawing.Size(213, 32);
@@ -228,7 +227,7 @@ namespace projeto_acg
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tabControl1.Location = new System.Drawing.Point(48, 101);
+            this.tabControl1.Location = new System.Drawing.Point(46, 107);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(15, 3);
@@ -260,7 +259,7 @@ namespace projeto_acg
             this.mtbhoras.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.mtbhoras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.mtbhoras.HidePromptOnLeave = true;
-            this.mtbhoras.Location = new System.Drawing.Point(128, 173);
+            this.mtbhoras.Location = new System.Drawing.Point(128, 171);
             this.mtbhoras.Margin = new System.Windows.Forms.Padding(2);
             this.mtbhoras.Mask = "00";
             this.mtbhoras.Name = "mtbhoras";
@@ -275,12 +274,12 @@ namespace projeto_acg
             // 
             this.lbhoras.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbhoras.AutoSize = true;
-            this.lbhoras.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbhoras.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbhoras.ForeColor = System.Drawing.Color.DimGray;
-            this.lbhoras.Location = new System.Drawing.Point(128, 146);
+            this.lbhoras.Location = new System.Drawing.Point(132, 148);
             this.lbhoras.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbhoras.Name = "lbhoras";
-            this.lbhoras.Size = new System.Drawing.Size(62, 25);
+            this.lbhoras.Size = new System.Drawing.Size(53, 21);
             this.lbhoras.TabIndex = 5;
             this.lbhoras.Text = "Horas";
             // 
@@ -291,7 +290,7 @@ namespace projeto_acg
             this.tbid.Enabled = false;
             this.tbid.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbid.Location = new System.Drawing.Point(144, 37);
+            this.tbid.Location = new System.Drawing.Point(144, 35);
             this.tbid.Margin = new System.Windows.Forms.Padding(2);
             this.tbid.Name = "tbid";
             this.tbid.Size = new System.Drawing.Size(30, 29);
@@ -302,12 +301,12 @@ namespace projeto_acg
             // 
             this.lbid.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbid.AutoSize = true;
-            this.lbid.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbid.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbid.ForeColor = System.Drawing.Color.DimGray;
-            this.lbid.Location = new System.Drawing.Point(144, 10);
+            this.lbid.Location = new System.Drawing.Point(147, 12);
             this.lbid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbid.Name = "lbid";
-            this.lbid.Size = new System.Drawing.Size(32, 25);
+            this.lbid.Size = new System.Drawing.Size(26, 21);
             this.lbid.TabIndex = 3;
             this.lbid.Text = "ID";
             // 
@@ -318,7 +317,7 @@ namespace projeto_acg
             this.tbnome.Enabled = false;
             this.tbnome.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbnome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbnome.Location = new System.Drawing.Point(20, 105);
+            this.tbnome.Location = new System.Drawing.Point(20, 103);
             this.tbnome.Margin = new System.Windows.Forms.Padding(2);
             this.tbnome.MaxLength = 50;
             this.tbnome.Name = "tbnome";
@@ -329,12 +328,12 @@ namespace projeto_acg
             // 
             this.lbnome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbnome.AutoSize = true;
-            this.lbnome.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbnome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbnome.ForeColor = System.Drawing.Color.DimGray;
-            this.lbnome.Location = new System.Drawing.Point(15, 78);
+            this.lbnome.Location = new System.Drawing.Point(19, 80);
             this.lbnome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbnome.Name = "lbnome";
-            this.lbnome.Size = new System.Drawing.Size(65, 25);
+            this.lbnome.Size = new System.Drawing.Size(55, 21);
             this.lbnome.TabIndex = 0;
             this.lbnome.Text = "Nome";
             // 
@@ -392,12 +391,12 @@ namespace projeto_acg
             // 
             this.lbtipo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbtipo.AutoSize = true;
-            this.lbtipo.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbtipo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbtipo.ForeColor = System.Drawing.Color.DimGray;
-            this.lbtipo.Location = new System.Drawing.Point(16, 116);
+            this.lbtipo.Location = new System.Drawing.Point(22, 120);
             this.lbtipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbtipo.Name = "lbtipo";
-            this.lbtipo.Size = new System.Drawing.Size(49, 25);
+            this.lbtipo.Size = new System.Drawing.Size(43, 21);
             this.lbtipo.TabIndex = 8;
             this.lbtipo.Text = "Tipo";
             // 
@@ -405,28 +404,14 @@ namespace projeto_acg
             // 
             this.lbmodalidade.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbmodalidade.AutoSize = true;
-            this.lbmodalidade.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbmodalidade.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbmodalidade.ForeColor = System.Drawing.Color.DimGray;
-            this.lbmodalidade.Location = new System.Drawing.Point(16, 48);
+            this.lbmodalidade.Location = new System.Drawing.Point(22, 52);
             this.lbmodalidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbmodalidade.Name = "lbmodalidade";
-            this.lbmodalidade.Size = new System.Drawing.Size(114, 25);
+            this.lbmodalidade.Size = new System.Drawing.Size(98, 21);
             this.lbmodalidade.TabIndex = 6;
             this.lbmodalidade.Text = "Modalidade";
-            // 
-            // lbEditar
-            // 
-            this.lbEditar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbEditar.AutoSize = true;
-            this.lbEditar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.lbEditar.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbEditar.Location = new System.Drawing.Point(96, 47);
-            this.lbEditar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbEditar.Name = "lbEditar";
-            this.lbEditar.Size = new System.Drawing.Size(233, 32);
-            this.lbEditar.TabIndex = 68;
-            this.lbEditar.Text = "EDITAR CADASTRO";
-            this.lbEditar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btexcluir
             // 
@@ -437,7 +422,7 @@ namespace projeto_acg
             this.btexcluir.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btexcluir.ForeColor = System.Drawing.Color.SteelBlue;
             this.btexcluir.Image = ((System.Drawing.Image)(resources.GetObject("btexcluir.Image")));
-            this.btexcluir.Location = new System.Drawing.Point(52, 373);
+            this.btexcluir.Location = new System.Drawing.Point(50, 379);
             this.btexcluir.Margin = new System.Windows.Forms.Padding(2);
             this.btexcluir.Name = "btexcluir";
             this.btexcluir.Size = new System.Drawing.Size(50, 68);
@@ -453,7 +438,7 @@ namespace projeto_acg
             this.btsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btsalvar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btsalvar.ForeColor = System.Drawing.Color.White;
-            this.btsalvar.Location = new System.Drawing.Point(160, 409);
+            this.btsalvar.Location = new System.Drawing.Point(158, 415);
             this.btsalvar.Margin = new System.Windows.Forms.Padding(2);
             this.btsalvar.Name = "btsalvar";
             this.btsalvar.Size = new System.Drawing.Size(213, 32);
@@ -476,7 +461,6 @@ namespace projeto_acg
             this.Controls.Add(this.bteditar);
             this.Controls.Add(this.btcancelar);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.lbEditar);
             this.Controls.Add(this.btexcluir);
             this.Controls.Add(this.btsalvar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -520,7 +504,6 @@ namespace projeto_acg
         private TextBox tbtipo;
         private Label lbtipo;
         private Label lbmodalidade;
-        private Label lbEditar;
         internal Button btexcluir;
         internal Button btsalvar;
         private ComboBox cbmodalidade;

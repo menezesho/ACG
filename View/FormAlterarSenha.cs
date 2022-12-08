@@ -108,6 +108,13 @@ namespace projeto_acg
                 tbNovaSenha.Focus();
             }
         }
+
+        private void lbsair_Click(object sender, EventArgs e)
+        {//lbsair
+            if (MessageBox.Show("Deseja mesmo sair do programa?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                Close();
+        }
+
         #region Ver Senha
 
         private void lbVerSenhaAtual_MouseCaptureChanged(object sender, EventArgs e)
@@ -135,5 +142,6 @@ namespace projeto_acg
         }
 
         #endregion
+
     }
 }

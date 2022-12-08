@@ -52,12 +52,12 @@ namespace projeto_acg.View
             // 
             this.lbcadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbcadastro.AutoSize = true;
-            this.lbcadastro.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lbcadastro.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.lbcadastro.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbcadastro.Location = new System.Drawing.Point(244, 69);
+            this.lbcadastro.Location = new System.Drawing.Point(239, 57);
             this.lbcadastro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbcadastro.Name = "lbcadastro";
-            this.lbcadastro.Size = new System.Drawing.Size(173, 32);
+            this.lbcadastro.Size = new System.Drawing.Size(195, 37);
             this.lbcadastro.TabIndex = 19;
             this.lbcadastro.Text = "CADASTRE-SE";
             this.lbcadastro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -70,7 +70,7 @@ namespace projeto_acg.View
             this.btlimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btlimpar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btlimpar.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btlimpar.Location = new System.Drawing.Point(178, 405);
+            this.btlimpar.Location = new System.Drawing.Point(184, 414);
             this.btlimpar.Margin = new System.Windows.Forms.Padding(2);
             this.btlimpar.Name = "btlimpar";
             this.btlimpar.Size = new System.Drawing.Size(150, 32);
@@ -87,7 +87,7 @@ namespace projeto_acg.View
             this.btsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btsalvar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btsalvar.ForeColor = System.Drawing.Color.White;
-            this.btsalvar.Location = new System.Drawing.Point(178, 441);
+            this.btsalvar.Location = new System.Drawing.Point(184, 450);
             this.btsalvar.Margin = new System.Windows.Forms.Padding(2);
             this.btsalvar.Name = "btsalvar";
             this.btsalvar.Size = new System.Drawing.Size(305, 32);
@@ -104,7 +104,7 @@ namespace projeto_acg.View
             this.btcancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btcancelar.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btcancelar.Location = new System.Drawing.Point(333, 405);
+            this.btcancelar.Location = new System.Drawing.Point(339, 414);
             this.btcancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btcancelar.Name = "btcancelar";
             this.btcancelar.Size = new System.Drawing.Size(150, 32);
@@ -119,7 +119,7 @@ namespace projeto_acg.View
             this.tbemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbemail.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbemail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbemail.Location = new System.Drawing.Point(178, 216);
+            this.tbemail.Location = new System.Drawing.Point(184, 225);
             this.tbemail.Margin = new System.Windows.Forms.Padding(2);
             this.tbemail.MaxLength = 50;
             this.tbemail.Name = "tbemail";
@@ -130,12 +130,12 @@ namespace projeto_acg.View
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label3.Location = new System.Drawing.Point(178, 189);
+            this.label3.Location = new System.Drawing.Point(185, 202);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 25);
+            this.label3.Size = new System.Drawing.Size(147, 21);
             this.label3.TabIndex = 6;
             this.label3.Text = "E-mail Institucional";
             // 
@@ -145,7 +145,7 @@ namespace projeto_acg.View
             this.tbnome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbnome.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbnome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbnome.Location = new System.Drawing.Point(178, 148);
+            this.tbnome.Location = new System.Drawing.Point(184, 157);
             this.tbnome.Margin = new System.Windows.Forms.Padding(2);
             this.tbnome.MaxLength = 50;
             this.tbnome.Name = "tbnome";
@@ -156,12 +156,12 @@ namespace projeto_acg.View
             // 
             this.lbnome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbnome.AutoSize = true;
-            this.lbnome.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbnome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbnome.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbnome.Location = new System.Drawing.Point(178, 121);
+            this.lbnome.Location = new System.Drawing.Point(185, 134);
             this.lbnome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbnome.Name = "lbnome";
-            this.lbnome.Size = new System.Drawing.Size(65, 25);
+            this.lbnome.Size = new System.Drawing.Size(55, 21);
             this.lbnome.TabIndex = 0;
             this.lbnome.Text = "Nome";
             // 
@@ -172,7 +172,7 @@ namespace projeto_acg.View
             this.lbsair.Font = new System.Drawing.Font("Segoe UI Semibold", 11.2F, System.Drawing.FontStyle.Bold);
             this.lbsair.ForeColor = System.Drawing.SystemColors.Control;
             this.lbsair.Image = ((System.Drawing.Image)(resources.GetObject("lbsair.Image")));
-            this.lbsair.Location = new System.Drawing.Point(454, 352);
+            this.lbsair.Location = new System.Drawing.Point(460, 361);
             this.lbsair.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbsair.Name = "lbsair";
             this.lbsair.Size = new System.Drawing.Size(29, 29);
@@ -186,11 +186,11 @@ namespace projeto_acg.View
             this.mtbmatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mtbmatricula.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.mtbmatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.mtbmatricula.Location = new System.Drawing.Point(178, 284);
+            this.mtbmatricula.Location = new System.Drawing.Point(184, 293);
             this.mtbmatricula.Margin = new System.Windows.Forms.Padding(2);
             this.mtbmatricula.Mask = "00-00000";
             this.mtbmatricula.Name = "mtbmatricula";
-            this.mtbmatricula.Size = new System.Drawing.Size(96, 29);
+            this.mtbmatricula.Size = new System.Drawing.Size(105, 29);
             this.mtbmatricula.TabIndex = 22;
             this.mtbmatricula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbmatricula.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
@@ -203,7 +203,7 @@ namespace projeto_acg.View
             this.tbsenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbsenha.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbsenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbsenha.Location = new System.Drawing.Point(178, 352);
+            this.tbsenha.Location = new System.Drawing.Point(184, 361);
             this.tbsenha.Margin = new System.Windows.Forms.Padding(2);
             this.tbsenha.MaxLength = 30;
             this.tbsenha.Name = "tbsenha";
@@ -215,12 +215,12 @@ namespace projeto_acg.View
             // 
             this.lbsenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbsenha.AutoSize = true;
-            this.lbsenha.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lbsenha.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbsenha.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbsenha.Location = new System.Drawing.Point(178, 325);
+            this.lbsenha.Location = new System.Drawing.Point(185, 338);
             this.lbsenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbsenha.Name = "lbsenha";
-            this.lbsenha.Size = new System.Drawing.Size(64, 25);
+            this.lbsenha.Size = new System.Drawing.Size(54, 21);
             this.lbsenha.TabIndex = 8;
             this.lbsenha.Text = "Senha";
             // 
@@ -228,12 +228,12 @@ namespace projeto_acg.View
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(178, 257);
+            this.label1.Location = new System.Drawing.Point(185, 270);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 25);
+            this.label1.Size = new System.Drawing.Size(78, 21);
             this.label1.TabIndex = 5;
             this.label1.Text = "Matrícula";
             // 
@@ -241,10 +241,10 @@ namespace projeto_acg.View
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(526, 69);
+            this.pictureBox1.Location = new System.Drawing.Point(533, 57);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(394, 404);
+            this.pictureBox1.Size = new System.Drawing.Size(394, 425);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
