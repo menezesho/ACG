@@ -54,11 +54,11 @@ namespace projeto_acg
             this.tbtipo.Enabled = false;
             this.tbtipo.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbtipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbtipo.Location = new System.Drawing.Point(279, 274);
-            this.tbtipo.Margin = new System.Windows.Forms.Padding(2);
+            this.tbtipo.Location = new System.Drawing.Point(372, 337);
+            this.tbtipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbtipo.MaxLength = 50;
             this.tbtipo.Name = "tbtipo";
-            this.tbtipo.Size = new System.Drawing.Size(201, 29);
+            this.tbtipo.Size = new System.Drawing.Size(267, 29);
             this.tbtipo.TabIndex = 2;
             // 
             // lbtipo
@@ -67,8 +67,7 @@ namespace projeto_acg
             this.lbtipo.AutoSize = true;
             this.lbtipo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbtipo.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbtipo.Location = new System.Drawing.Point(278, 251);
-            this.lbtipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbtipo.Location = new System.Drawing.Point(371, 309);
             this.lbtipo.Name = "lbtipo";
             this.lbtipo.Size = new System.Drawing.Size(43, 21);
             this.lbtipo.TabIndex = 41;
@@ -83,11 +82,11 @@ namespace projeto_acg
             this.mtbhoras.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.mtbhoras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.mtbhoras.HidePromptOnLeave = true;
-            this.mtbhoras.Location = new System.Drawing.Point(198, 274);
-            this.mtbhoras.Margin = new System.Windows.Forms.Padding(2);
+            this.mtbhoras.Location = new System.Drawing.Point(264, 337);
+            this.mtbhoras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mtbhoras.Mask = "00";
             this.mtbhoras.Name = "mtbhoras";
-            this.mtbhoras.Size = new System.Drawing.Size(52, 29);
+            this.mtbhoras.Size = new System.Drawing.Size(69, 29);
             this.mtbhoras.TabIndex = 1;
             this.mtbhoras.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbhoras.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
@@ -100,8 +99,7 @@ namespace projeto_acg
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(199, 251);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(265, 309);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 21);
             this.label1.TabIndex = 39;
@@ -118,10 +116,10 @@ namespace projeto_acg
             this.cbnome.FormattingEnabled = true;
             this.cbnome.Items.AddRange(new object[] {
             "Selecione"});
-            this.cbnome.Location = new System.Drawing.Point(198, 206);
-            this.cbnome.Margin = new System.Windows.Forms.Padding(2);
+            this.cbnome.Location = new System.Drawing.Point(264, 254);
+            this.cbnome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbnome.Name = "cbnome";
-            this.cbnome.Size = new System.Drawing.Size(282, 29);
+            this.cbnome.Size = new System.Drawing.Size(375, 29);
             this.cbnome.TabIndex = 0;
             this.cbnome.SelectedIndexChanged += new System.EventHandler(this.cbnome_SelectedIndexChanged);
             // 
@@ -131,8 +129,7 @@ namespace projeto_acg
             this.lbmodalidade.AutoSize = true;
             this.lbmodalidade.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbmodalidade.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbmodalidade.Location = new System.Drawing.Point(199, 319);
-            this.lbmodalidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbmodalidade.Location = new System.Drawing.Point(265, 393);
             this.lbmodalidade.Name = "lbmodalidade";
             this.lbmodalidade.Size = new System.Drawing.Size(98, 21);
             this.lbmodalidade.TabIndex = 33;
@@ -146,11 +143,11 @@ namespace projeto_acg
             this.tbmodalidade.Enabled = false;
             this.tbmodalidade.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbmodalidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbmodalidade.Location = new System.Drawing.Point(198, 342);
-            this.tbmodalidade.Margin = new System.Windows.Forms.Padding(2);
+            this.tbmodalidade.Location = new System.Drawing.Point(264, 421);
+            this.tbmodalidade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbmodalidade.MaxLength = 50;
             this.tbmodalidade.Name = "tbmodalidade";
-            this.tbmodalidade.Size = new System.Drawing.Size(281, 29);
+            this.tbmodalidade.Size = new System.Drawing.Size(374, 29);
             this.tbmodalidade.TabIndex = 3;
             // 
             // lbnome
@@ -159,8 +156,7 @@ namespace projeto_acg
             this.lbnome.AutoSize = true;
             this.lbnome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbnome.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbnome.Location = new System.Drawing.Point(199, 183);
-            this.lbnome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbnome.Location = new System.Drawing.Point(265, 225);
             this.lbnome.Name = "lbnome";
             this.lbnome.Size = new System.Drawing.Size(55, 21);
             this.lbnome.TabIndex = 32;
@@ -172,8 +168,7 @@ namespace projeto_acg
             this.lbcadastro.AutoSize = true;
             this.lbcadastro.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.lbcadastro.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbcadastro.Location = new System.Drawing.Point(251, 106);
-            this.lbcadastro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbcadastro.Location = new System.Drawing.Point(335, 130);
             this.lbcadastro.Name = "lbcadastro";
             this.lbcadastro.Size = new System.Drawing.Size(177, 37);
             this.lbcadastro.TabIndex = 37;
@@ -188,10 +183,10 @@ namespace projeto_acg
             this.btenviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btenviar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btenviar.ForeColor = System.Drawing.Color.White;
-            this.btenviar.Location = new System.Drawing.Point(198, 395);
-            this.btenviar.Margin = new System.Windows.Forms.Padding(2);
+            this.btenviar.Location = new System.Drawing.Point(264, 486);
+            this.btenviar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btenviar.Name = "btenviar";
-            this.btenviar.Size = new System.Drawing.Size(280, 32);
+            this.btenviar.Size = new System.Drawing.Size(373, 39);
             this.btenviar.TabIndex = 6;
             this.btenviar.Text = "ENVIAR";
             this.btenviar.UseVisualStyleBackColor = false;
@@ -201,10 +196,10 @@ namespace projeto_acg
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(504, 106);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(672, 130);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(394, 321);
+            this.pictureBox1.Size = new System.Drawing.Size(525, 395);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
@@ -216,19 +211,18 @@ namespace projeto_acg
             this.lbsair.Font = new System.Drawing.Font("Segoe UI Semibold", 11.2F, System.Drawing.FontStyle.Bold);
             this.lbsair.ForeColor = System.Drawing.SystemColors.Control;
             this.lbsair.Image = ((System.Drawing.Image)(resources.GetObject("lbsair.Image")));
-            this.lbsair.Location = new System.Drawing.Point(1033, 491);
-            this.lbsair.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbsair.Location = new System.Drawing.Point(1377, 604);
             this.lbsair.Name = "lbsair";
-            this.lbsair.Size = new System.Drawing.Size(40, 40);
+            this.lbsair.Size = new System.Drawing.Size(53, 49);
             this.lbsair.TabIndex = 43;
             this.lbsair.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbsair.Click += new System.EventHandler(this.lbsair_Click);
             // 
             // FormEnviarAcg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 540);
+            this.ClientSize = new System.Drawing.Size(1445, 665);
             this.Controls.Add(this.lbsair);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbtipo);
@@ -242,8 +236,8 @@ namespace projeto_acg
             this.Controls.Add(this.lbcadastro);
             this.Controls.Add(this.btenviar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(1100, 579);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1461, 704);
             this.Name = "FormEnviarAcg";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

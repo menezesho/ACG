@@ -30,9 +30,9 @@ namespace projeto_acg {
         
         private ENVIODataTable tableENVIO;
         
-        private global::System.Data.DataRelation relationFK__ENVIO__ID_ACG__4E53A1AA;
+        private global::System.Data.DataRelation relationFK__ENVIO__ID_ACG__276EDEB3;
         
-        private global::System.Data.DataRelation relationFK__ENVIO__ID_ALUNO__4F47C5E3;
+        private global::System.Data.DataRelation relationFK__ENVIO__ID_ALUNO__286302EC;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -246,8 +246,8 @@ namespace projeto_acg {
                     this.tableENVIO.InitVars();
                 }
             }
-            this.relationFK__ENVIO__ID_ACG__4E53A1AA = this.Relations["FK__ENVIO__ID_ACG__4E53A1AA"];
-            this.relationFK__ENVIO__ID_ALUNO__4F47C5E3 = this.Relations["FK__ENVIO__ID_ALUNO__4F47C5E3"];
+            this.relationFK__ENVIO__ID_ACG__276EDEB3 = this.Relations["FK__ENVIO__ID_ACG__276EDEB3"];
+            this.relationFK__ENVIO__ID_ALUNO__286302EC = this.Relations["FK__ENVIO__ID_ALUNO__286302EC"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -264,14 +264,14 @@ namespace projeto_acg {
             base.Tables.Add(this.tableALUNO);
             this.tableENVIO = new ENVIODataTable();
             base.Tables.Add(this.tableENVIO);
-            this.relationFK__ENVIO__ID_ACG__4E53A1AA = new global::System.Data.DataRelation("FK__ENVIO__ID_ACG__4E53A1AA", new global::System.Data.DataColumn[] {
+            this.relationFK__ENVIO__ID_ACG__276EDEB3 = new global::System.Data.DataRelation("FK__ENVIO__ID_ACG__276EDEB3", new global::System.Data.DataColumn[] {
                         this.tableACG.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableENVIO.ID_ACGColumn}, false);
-            this.Relations.Add(this.relationFK__ENVIO__ID_ACG__4E53A1AA);
-            this.relationFK__ENVIO__ID_ALUNO__4F47C5E3 = new global::System.Data.DataRelation("FK__ENVIO__ID_ALUNO__4F47C5E3", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__ENVIO__ID_ACG__276EDEB3);
+            this.relationFK__ENVIO__ID_ALUNO__286302EC = new global::System.Data.DataRelation("FK__ENVIO__ID_ALUNO__286302EC", new global::System.Data.DataColumn[] {
                         this.tableALUNO.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableENVIO.ID_ALUNOColumn}, false);
-            this.Relations.Add(this.relationFK__ENVIO__ID_ALUNO__4F47C5E3);
+            this.Relations.Add(this.relationFK__ENVIO__ID_ALUNO__286302EC);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -694,8 +694,6 @@ namespace projeto_acg {
             
             private global::System.Data.DataColumn columnSENHA;
             
-            private global::System.Data.DataColumn columnAPROVADO;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ALUNODataTable() {
@@ -771,14 +769,6 @@ namespace projeto_acg {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn APROVADOColumn {
-                get {
-                    return this.columnAPROVADO;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -814,15 +804,14 @@ namespace projeto_acg {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ALUNORow AddALUNORow(string NOME, string EMAIL, string MATRICULA, string SENHA, string APROVADO) {
+            public ALUNORow AddALUNORow(string NOME, string EMAIL, string MATRICULA, string SENHA) {
                 ALUNORow rowALUNORow = ((ALUNORow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         NOME,
                         EMAIL,
                         MATRICULA,
-                        SENHA,
-                        APROVADO};
+                        SENHA};
                 rowALUNORow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowALUNORow);
                 return rowALUNORow;
@@ -857,7 +846,6 @@ namespace projeto_acg {
                 this.columnEMAIL = base.Columns["EMAIL"];
                 this.columnMATRICULA = base.Columns["MATRICULA"];
                 this.columnSENHA = base.Columns["SENHA"];
-                this.columnAPROVADO = base.Columns["APROVADO"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -873,8 +861,6 @@ namespace projeto_acg {
                 base.Columns.Add(this.columnMATRICULA);
                 this.columnSENHA = new global::System.Data.DataColumn("SENHA", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSENHA);
-                this.columnAPROVADO = new global::System.Data.DataColumn("APROVADO", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAPROVADO);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -887,7 +873,6 @@ namespace projeto_acg {
                 this.columnEMAIL.MaxLength = 50;
                 this.columnMATRICULA.MaxLength = 7;
                 this.columnSENHA.MaxLength = 30;
-                this.columnAPROVADO.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1025,6 +1010,8 @@ namespace projeto_acg {
             
             private global::System.Data.DataColumn columnID_ALUNO;
             
+            private global::System.Data.DataColumn columnACEITO;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ENVIODataTable() {
@@ -1076,6 +1063,14 @@ namespace projeto_acg {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ACEITOColumn {
+                get {
+                    return this.columnACEITO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1111,16 +1106,17 @@ namespace projeto_acg {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ENVIORow AddENVIORow(ACGRow parentACGRowByFK__ENVIO__ID_ACG__4E53A1AA, ALUNORow parentALUNORowByFK__ENVIO__ID_ALUNO__4F47C5E3) {
+            public ENVIORow AddENVIORow(ACGRow parentACGRowByFK__ENVIO__ID_ACG__276EDEB3, ALUNORow parentALUNORowByFK__ENVIO__ID_ALUNO__286302EC, int ACEITO) {
                 ENVIORow rowENVIORow = ((ENVIORow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        null};
-                if ((parentACGRowByFK__ENVIO__ID_ACG__4E53A1AA != null)) {
-                    columnValuesArray[0] = parentACGRowByFK__ENVIO__ID_ACG__4E53A1AA[0];
+                        null,
+                        ACEITO};
+                if ((parentACGRowByFK__ENVIO__ID_ACG__276EDEB3 != null)) {
+                    columnValuesArray[0] = parentACGRowByFK__ENVIO__ID_ACG__276EDEB3[0];
                 }
-                if ((parentALUNORowByFK__ENVIO__ID_ALUNO__4F47C5E3 != null)) {
-                    columnValuesArray[1] = parentALUNORowByFK__ENVIO__ID_ALUNO__4F47C5E3[0];
+                if ((parentALUNORowByFK__ENVIO__ID_ALUNO__286302EC != null)) {
+                    columnValuesArray[1] = parentALUNORowByFK__ENVIO__ID_ALUNO__286302EC[0];
                 }
                 rowENVIORow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowENVIORow);
@@ -1146,6 +1142,7 @@ namespace projeto_acg {
             internal void InitVars() {
                 this.columnID_ACG = base.Columns["ID_ACG"];
                 this.columnID_ALUNO = base.Columns["ID_ALUNO"];
+                this.columnACEITO = base.Columns["ACEITO"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1155,6 +1152,8 @@ namespace projeto_acg {
                 base.Columns.Add(this.columnID_ACG);
                 this.columnID_ALUNO = new global::System.Data.DataColumn("ID_ALUNO", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID_ALUNO);
+                this.columnACEITO = new global::System.Data.DataColumn("ACEITO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACEITO);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1421,11 +1420,11 @@ namespace projeto_acg {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ENVIORow[] GetENVIORows() {
-                if ((this.Table.ChildRelations["FK__ENVIO__ID_ACG__4E53A1AA"] == null)) {
+                if ((this.Table.ChildRelations["FK__ENVIO__ID_ACG__276EDEB3"] == null)) {
                     return new ENVIORow[0];
                 }
                 else {
-                    return ((ENVIORow[])(base.GetChildRows(this.Table.ChildRelations["FK__ENVIO__ID_ACG__4E53A1AA"])));
+                    return ((ENVIORow[])(base.GetChildRows(this.Table.ChildRelations["FK__ENVIO__ID_ACG__276EDEB3"])));
                 }
             }
         }
@@ -1521,22 +1520,6 @@ namespace projeto_acg {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string APROVADO {
-                get {
-                    try {
-                        return ((string)(this[this.tableALUNO.APROVADOColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'APROVADO\' na tabela \'ALUNO\' é DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableALUNO.APROVADOColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsNOMENull() {
                 return this.IsNull(this.tableALUNO.NOMEColumn);
             }
@@ -1585,24 +1568,12 @@ namespace projeto_acg {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsAPROVADONull() {
-                return this.IsNull(this.tableALUNO.APROVADOColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetAPROVADONull() {
-                this[this.tableALUNO.APROVADOColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ENVIORow[] GetENVIORows() {
-                if ((this.Table.ChildRelations["FK__ENVIO__ID_ALUNO__4F47C5E3"] == null)) {
+                if ((this.Table.ChildRelations["FK__ENVIO__ID_ALUNO__286302EC"] == null)) {
                     return new ENVIORow[0];
                 }
                 else {
-                    return ((ENVIORow[])(base.GetChildRows(this.Table.ChildRelations["FK__ENVIO__ID_ALUNO__4F47C5E3"])));
+                    return ((ENVIORow[])(base.GetChildRows(this.Table.ChildRelations["FK__ENVIO__ID_ALUNO__286302EC"])));
                 }
             }
         }
@@ -1655,12 +1626,28 @@ namespace projeto_acg {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ACGRow ACGRow {
+            public int ACEITO {
                 get {
-                    return ((ACGRow)(this.GetParentRow(this.Table.ParentRelations["FK__ENVIO__ID_ACG__4E53A1AA"])));
+                    try {
+                        return ((int)(this[this.tableENVIO.ACEITOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'ACEITO\' na tabela \'ENVIO\' é DBNull.", e);
+                    }
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__ENVIO__ID_ACG__4E53A1AA"]);
+                    this[this.tableENVIO.ACEITOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public ACGRow ACGRow {
+                get {
+                    return ((ACGRow)(this.GetParentRow(this.Table.ParentRelations["FK__ENVIO__ID_ACG__276EDEB3"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__ENVIO__ID_ACG__276EDEB3"]);
                 }
             }
             
@@ -1668,10 +1655,10 @@ namespace projeto_acg {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ALUNORow ALUNORow {
                 get {
-                    return ((ALUNORow)(this.GetParentRow(this.Table.ParentRelations["FK__ENVIO__ID_ALUNO__4F47C5E3"])));
+                    return ((ALUNORow)(this.GetParentRow(this.Table.ParentRelations["FK__ENVIO__ID_ALUNO__286302EC"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__ENVIO__ID_ALUNO__4F47C5E3"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__ENVIO__ID_ALUNO__286302EC"]);
                 }
             }
             
@@ -1697,6 +1684,18 @@ namespace projeto_acg {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetID_ALUNONull() {
                 this[this.tableENVIO.ID_ALUNOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsACEITONull() {
+                return this.IsNull(this.tableENVIO.ACEITOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetACEITONull() {
+                this[this.tableENVIO.ACEITOColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2360,11 +2359,10 @@ SELECT ID, NOME, HORAS, MODALIDADE, TIPO FROM ACG WHERE (ID = @ID)";
             tableMapping.ColumnMappings.Add("EMAIL", "EMAIL");
             tableMapping.ColumnMappings.Add("MATRICULA", "MATRICULA");
             tableMapping.ColumnMappings.Add("SENHA", "SENHA");
-            tableMapping.ColumnMappings.Add("APROVADO", "APROVADO");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[ALUNO] WHERE (([ID] = @Original_ID) AND ((@IsNull_NOME = 1 AND [NOME] IS NULL) OR ([NOME] = @Original_NOME)) AND ((@IsNull_EMAIL = 1 AND [EMAIL] IS NULL) OR ([EMAIL] = @Original_EMAIL)) AND ((@IsNull_MATRICULA = 1 AND [MATRICULA] IS NULL) OR ([MATRICULA] = @Original_MATRICULA)) AND ((@IsNull_SENHA = 1 AND [SENHA] IS NULL) OR ([SENHA] = @Original_SENHA)) AND ((@IsNull_APROVADO = 1 AND [APROVADO] IS NULL) OR ([APROVADO] = @Original_APROVADO)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[ALUNO] WHERE (([ID] = @Original_ID) AND ((@IsNull_NOME = 1 AND [NOME] IS NULL) OR ([NOME] = @Original_NOME)) AND ((@IsNull_EMAIL = 1 AND [EMAIL] IS NULL) OR ([EMAIL] = @Original_EMAIL)) AND ((@IsNull_MATRICULA = 1 AND [MATRICULA] IS NULL) OR ([MATRICULA] = @Original_MATRICULA)) AND ((@IsNull_SENHA = 1 AND [SENHA] IS NULL) OR ([SENHA] = @Original_SENHA)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NOME", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOME", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -2375,29 +2373,25 @@ SELECT ID, NOME, HORAS, MODALIDADE, TIPO FROM ACG WHERE (ID = @ID)";
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MATRICULA", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MATRICULA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SENHA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SENHA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SENHA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SENHA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_APROVADO", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "APROVADO", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_APROVADO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "APROVADO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ALUNO] ([NOME], [EMAIL], [MATRICULA], [SENHA], [APROVADO]) VAL" +
-                "UES (@NOME, @EMAIL, @MATRICULA, @SENHA, @APROVADO);\r\nSELECT ID, NOME, EMAIL, MAT" +
-                "RICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ALUNO] ([NOME], [EMAIL], [MATRICULA], [SENHA]) VALUES (@NOME, " +
+                "@EMAIL, @MATRICULA, @SENHA);\r\nSELECT ID, NOME, EMAIL, MATRICULA, SENHA FROM ALUN" +
+                "O WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NOME", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOME", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EMAIL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EMAIL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MATRICULA", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MATRICULA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SENHA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SENHA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@APROVADO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "APROVADO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[ALUNO] SET [NOME] = @NOME, [EMAIL] = @EMAIL, [MATRICULA] = @MATRICULA, [SENHA] = @SENHA, [APROVADO] = @APROVADO WHERE (([ID] = @Original_ID) AND ((@IsNull_NOME = 1 AND [NOME] IS NULL) OR ([NOME] = @Original_NOME)) AND ((@IsNull_EMAIL = 1 AND [EMAIL] IS NULL) OR ([EMAIL] = @Original_EMAIL)) AND ((@IsNull_MATRICULA = 1 AND [MATRICULA] IS NULL) OR ([MATRICULA] = @Original_MATRICULA)) AND ((@IsNull_SENHA = 1 AND [SENHA] IS NULL) OR ([SENHA] = @Original_SENHA)) AND ((@IsNull_APROVADO = 1 AND [APROVADO] IS NULL) OR ([APROVADO] = @Original_APROVADO)));
-SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[ALUNO] SET [NOME] = @NOME, [EMAIL] = @EMAIL, [MATRICULA] = @MATRICULA, [SENHA] = @SENHA WHERE (([ID] = @Original_ID) AND ((@IsNull_NOME = 1 AND [NOME] IS NULL) OR ([NOME] = @Original_NOME)) AND ((@IsNull_EMAIL = 1 AND [EMAIL] IS NULL) OR ([EMAIL] = @Original_EMAIL)) AND ((@IsNull_MATRICULA = 1 AND [MATRICULA] IS NULL) OR ([MATRICULA] = @Original_MATRICULA)) AND ((@IsNull_SENHA = 1 AND [SENHA] IS NULL) OR ([SENHA] = @Original_SENHA)));
+SELECT ID, NOME, EMAIL, MATRICULA, SENHA FROM ALUNO WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NOME", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOME", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EMAIL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EMAIL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MATRICULA", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MATRICULA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SENHA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SENHA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@APROVADO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "APROVADO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NOME", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOME", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NOME", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOME", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -2407,8 +2401,6 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MATRICULA", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MATRICULA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SENHA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SENHA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SENHA", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SENHA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_APROVADO", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "APROVADO", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_APROVADO", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "APROVADO", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -2425,7 +2417,7 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM dbo.ALUNO";
+            this._commandCollection[0].CommandText = "SELECT ID, NOME, EMAIL, MATRICULA, SENHA FROM dbo.ALUNO";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2486,7 +2478,7 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, string Original_NOME, string Original_EMAIL, string Original_MATRICULA, string Original_SENHA, string Original_APROVADO) {
+        public virtual int Delete(int Original_ID, string Original_NOME, string Original_EMAIL, string Original_MATRICULA, string Original_SENHA) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
             if ((Original_NOME == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -2520,14 +2512,6 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_SENHA));
             }
-            if ((Original_APROVADO == null)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_APROVADO));
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2548,7 +2532,7 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string NOME, string EMAIL, string MATRICULA, string SENHA, string APROVADO) {
+        public virtual int Insert(string NOME, string EMAIL, string MATRICULA, string SENHA) {
             if ((NOME == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -2573,12 +2557,6 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(SENHA));
             }
-            if ((APROVADO == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(APROVADO));
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2599,7 +2577,7 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string NOME, string EMAIL, string MATRICULA, string SENHA, string APROVADO, int Original_ID, string Original_NOME, string Original_EMAIL, string Original_MATRICULA, string Original_SENHA, string Original_APROVADO, int ID) {
+        public virtual int Update(string NOME, string EMAIL, string MATRICULA, string SENHA, int Original_ID, string Original_NOME, string Original_EMAIL, string Original_MATRICULA, string Original_SENHA, int ID) {
             if ((NOME == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -2624,54 +2602,40 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(SENHA));
             }
-            if ((APROVADO == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(APROVADO));
-            }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_ID));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_ID));
             if ((Original_NOME == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_NOME));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_NOME));
             }
             if ((Original_EMAIL == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_EMAIL));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_EMAIL));
             }
             if ((Original_MATRICULA == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_MATRICULA));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_MATRICULA));
             }
             if ((Original_SENHA == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_SENHA));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_SENHA));
             }
-            if ((Original_APROVADO == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_APROVADO));
-            }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(ID));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(ID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2692,8 +2656,8 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string NOME, string EMAIL, string MATRICULA, string SENHA, string APROVADO, int Original_ID, string Original_NOME, string Original_EMAIL, string Original_MATRICULA, string Original_SENHA, string Original_APROVADO) {
-            return this.Update(NOME, EMAIL, MATRICULA, SENHA, APROVADO, Original_ID, Original_NOME, Original_EMAIL, Original_MATRICULA, Original_SENHA, Original_APROVADO, Original_ID);
+        public virtual int Update(string NOME, string EMAIL, string MATRICULA, string SENHA, int Original_ID, string Original_NOME, string Original_EMAIL, string Original_MATRICULA, string Original_SENHA) {
+            return this.Update(NOME, EMAIL, MATRICULA, SENHA, Original_ID, Original_NOME, Original_EMAIL, Original_MATRICULA, Original_SENHA, Original_ID);
         }
     }
     
@@ -2820,13 +2784,16 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
             tableMapping.DataSetTable = "ENVIO";
             tableMapping.ColumnMappings.Add("ID_ACG", "ID_ACG");
             tableMapping.ColumnMappings.Add("ID_ALUNO", "ID_ALUNO");
+            tableMapping.ColumnMappings.Add("ACEITO", "ACEITO");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ENVIO] ([ID_ACG], [ID_ALUNO]) VALUES (@ID_ACG, @ID_ALUNO)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ENVIO] ([ID_ACG], [ID_ALUNO], [ACEITO]) VALUES (@ID_ACG, @ID_A" +
+                "LUNO, @ACEITO)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_ACG", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_ACG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_ALUNO", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_ALUNO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ACEITO", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ACEITO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2842,7 +2809,7 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID_ACG, ID_ALUNO FROM dbo.ENVIO";
+            this._commandCollection[0].CommandText = "SELECT ID_ACG, ID_ALUNO, ACEITO FROM dbo.ENVIO";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2903,7 +2870,7 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> ID_ACG, global::System.Nullable<int> ID_ALUNO) {
+        public virtual int Insert(global::System.Nullable<int> ID_ACG, global::System.Nullable<int> ID_ALUNO, global::System.Nullable<int> ACEITO) {
             if ((ID_ACG.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ID_ACG.Value));
             }
@@ -2915,6 +2882,12 @@ SELECT ID, NOME, EMAIL, MATRICULA, SENHA, APROVADO FROM ALUNO WHERE (ID = @ID)";
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((ACEITO.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(ACEITO.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

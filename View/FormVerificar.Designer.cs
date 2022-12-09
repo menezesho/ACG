@@ -50,8 +50,7 @@ namespace projeto_acg
             this.lbcadastro.AutoSize = true;
             this.lbcadastro.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.lbcadastro.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbcadastro.Location = new System.Drawing.Point(183, 106);
-            this.lbcadastro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbcadastro.Location = new System.Drawing.Point(244, 130);
             this.lbcadastro.Name = "lbcadastro";
             this.lbcadastro.Size = new System.Drawing.Size(294, 37);
             this.lbcadastro.TabIndex = 25;
@@ -66,11 +65,11 @@ namespace projeto_acg
             this.tbNome.Enabled = false;
             this.tbNome.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbNome.ForeColor = System.Drawing.Color.DimGray;
-            this.tbNome.Location = new System.Drawing.Point(182, 206);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(2);
+            this.tbNome.Location = new System.Drawing.Point(243, 254);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNome.MaxLength = 50;
             this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(297, 29);
+            this.tbNome.Size = new System.Drawing.Size(395, 29);
             this.tbNome.TabIndex = 0;
             this.tbNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -79,10 +78,9 @@ namespace projeto_acg
             this.lbsituacao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbsituacao.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbsituacao.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbsituacao.Location = new System.Drawing.Point(133, 395);
-            this.lbsituacao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbsituacao.Location = new System.Drawing.Point(177, 486);
             this.lbsituacao.Name = "lbsituacao";
-            this.lbsituacao.Size = new System.Drawing.Size(394, 33);
+            this.lbsituacao.Size = new System.Drawing.Size(525, 41);
             this.lbsituacao.TabIndex = 33;
             this.lbsituacao.Text = "Situação: ";
             this.lbsituacao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -93,8 +91,7 @@ namespace projeto_acg
             this.lbhorasfaltantes.AutoSize = true;
             this.lbhorasfaltantes.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbhorasfaltantes.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbhorasfaltantes.Location = new System.Drawing.Point(184, 319);
-            this.lbhorasfaltantes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbhorasfaltantes.Location = new System.Drawing.Point(245, 393);
             this.lbhorasfaltantes.Name = "lbhorasfaltantes";
             this.lbhorasfaltantes.Size = new System.Drawing.Size(67, 21);
             this.lbhorasfaltantes.TabIndex = 34;
@@ -106,8 +103,7 @@ namespace projeto_acg
             this.lbhorastotais.AutoSize = true;
             this.lbhorastotais.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbhorastotais.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbhorastotais.Location = new System.Drawing.Point(184, 251);
-            this.lbhorastotais.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbhorastotais.Location = new System.Drawing.Point(245, 309);
             this.lbhorastotais.Name = "lbhorastotais";
             this.lbhorastotais.Size = new System.Drawing.Size(45, 21);
             this.lbhorastotais.TabIndex = 35;
@@ -119,8 +115,7 @@ namespace projeto_acg
             this.lbnome.AutoSize = true;
             this.lbnome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbnome.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbnome.Location = new System.Drawing.Point(184, 183);
-            this.lbnome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbnome.Location = new System.Drawing.Point(245, 225);
             this.lbnome.Name = "lbnome";
             this.lbnome.Size = new System.Drawing.Size(55, 21);
             this.lbnome.TabIndex = 36;
@@ -134,10 +129,10 @@ namespace projeto_acg
             this.tbhorastotais.Enabled = false;
             this.tbhorastotais.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbhorastotais.ForeColor = System.Drawing.Color.DimGray;
-            this.tbhorastotais.Location = new System.Drawing.Point(182, 274);
-            this.tbhorastotais.Margin = new System.Windows.Forms.Padding(2);
+            this.tbhorastotais.Location = new System.Drawing.Point(243, 337);
+            this.tbhorastotais.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbhorastotais.Name = "tbhorastotais";
-            this.tbhorastotais.Size = new System.Drawing.Size(297, 29);
+            this.tbhorastotais.Size = new System.Drawing.Size(395, 29);
             this.tbhorastotais.TabIndex = 1;
             this.tbhorastotais.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -149,10 +144,10 @@ namespace projeto_acg
             this.tbhorasfaltantes.Enabled = false;
             this.tbhorasfaltantes.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbhorasfaltantes.ForeColor = System.Drawing.Color.DimGray;
-            this.tbhorasfaltantes.Location = new System.Drawing.Point(182, 342);
-            this.tbhorasfaltantes.Margin = new System.Windows.Forms.Padding(2);
+            this.tbhorasfaltantes.Location = new System.Drawing.Point(243, 421);
+            this.tbhorasfaltantes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbhorasfaltantes.Name = "tbhorasfaltantes";
-            this.tbhorasfaltantes.Size = new System.Drawing.Size(297, 29);
+            this.tbhorasfaltantes.Size = new System.Drawing.Size(395, 29);
             this.tbhorasfaltantes.TabIndex = 2;
             this.tbhorasfaltantes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -160,10 +155,10 @@ namespace projeto_acg
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(523, 106);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(697, 130);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(394, 322);
+            this.pictureBox1.Size = new System.Drawing.Size(525, 396);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
@@ -175,19 +170,18 @@ namespace projeto_acg
             this.lbsair.Font = new System.Drawing.Font("Segoe UI Semibold", 11.2F, System.Drawing.FontStyle.Bold);
             this.lbsair.ForeColor = System.Drawing.SystemColors.Control;
             this.lbsair.Image = ((System.Drawing.Image)(resources.GetObject("lbsair.Image")));
-            this.lbsair.Location = new System.Drawing.Point(1033, 491);
-            this.lbsair.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbsair.Location = new System.Drawing.Point(1377, 604);
             this.lbsair.Name = "lbsair";
-            this.lbsair.Size = new System.Drawing.Size(40, 40);
+            this.lbsair.Size = new System.Drawing.Size(53, 49);
             this.lbsair.TabIndex = 39;
             this.lbsair.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbsair.Click += new System.EventHandler(this.btFechar_Click);
             // 
             // FormVerificar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 540);
+            this.ClientSize = new System.Drawing.Size(1445, 665);
             this.Controls.Add(this.lbsituacao);
             this.Controls.Add(this.lbsair);
             this.Controls.Add(this.tbNome);
@@ -199,8 +193,8 @@ namespace projeto_acg
             this.Controls.Add(this.lbcadastro);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(1100, 579);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1461, 704);
             this.Name = "FormVerificar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Situação";

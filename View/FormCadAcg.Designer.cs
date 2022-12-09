@@ -54,11 +54,11 @@ namespace projeto_acg.View
             this.tbtipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbtipo.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbtipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbtipo.Location = new System.Drawing.Point(267, 256);
-            this.tbtipo.Margin = new System.Windows.Forms.Padding(2);
+            this.tbtipo.Location = new System.Drawing.Point(356, 315);
+            this.tbtipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbtipo.MaxLength = 50;
             this.tbtipo.Name = "tbtipo";
-            this.tbtipo.Size = new System.Drawing.Size(201, 29);
+            this.tbtipo.Size = new System.Drawing.Size(267, 29);
             this.tbtipo.TabIndex = 2;
             this.tbtipo.Enter += new System.EventHandler(this.tbtipo_Enter);
             this.tbtipo.Leave += new System.EventHandler(this.tbtipo_Leave);
@@ -69,8 +69,7 @@ namespace projeto_acg.View
             this.lbtipo.AutoSize = true;
             this.lbtipo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbtipo.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbtipo.Location = new System.Drawing.Point(267, 233);
-            this.lbtipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbtipo.Location = new System.Drawing.Point(356, 287);
             this.lbtipo.Name = "lbtipo";
             this.lbtipo.Size = new System.Drawing.Size(43, 21);
             this.lbtipo.TabIndex = 53;
@@ -84,11 +83,11 @@ namespace projeto_acg.View
             this.mtbhoras.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.mtbhoras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.mtbhoras.HidePromptOnLeave = true;
-            this.mtbhoras.Location = new System.Drawing.Point(187, 256);
-            this.mtbhoras.Margin = new System.Windows.Forms.Padding(2);
+            this.mtbhoras.Location = new System.Drawing.Point(249, 315);
+            this.mtbhoras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mtbhoras.Mask = "00";
             this.mtbhoras.Name = "mtbhoras";
-            this.mtbhoras.Size = new System.Drawing.Size(62, 29);
+            this.mtbhoras.Size = new System.Drawing.Size(82, 29);
             this.mtbhoras.TabIndex = 1;
             this.mtbhoras.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mtbhoras.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
@@ -99,8 +98,7 @@ namespace projeto_acg.View
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(189, 233);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(252, 287);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 21);
             this.label1.TabIndex = 52;
@@ -114,10 +112,10 @@ namespace projeto_acg.View
             this.btcancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btcancelar.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btcancelar.Location = new System.Drawing.Point(330, 377);
-            this.btcancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.btcancelar.Location = new System.Drawing.Point(440, 464);
+            this.btcancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btcancelar.Name = "btcancelar";
-            this.btcancelar.Size = new System.Drawing.Size(138, 32);
+            this.btcancelar.Size = new System.Drawing.Size(184, 39);
             this.btcancelar.TabIndex = 47;
             this.btcancelar.Text = "CANCELAR";
             this.btcancelar.UseVisualStyleBackColor = false;
@@ -129,8 +127,7 @@ namespace projeto_acg.View
             this.lbmodalidade.AutoSize = true;
             this.lbmodalidade.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbmodalidade.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbmodalidade.Location = new System.Drawing.Point(189, 301);
-            this.lbmodalidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbmodalidade.Location = new System.Drawing.Point(252, 370);
             this.lbmodalidade.Name = "lbmodalidade";
             this.lbmodalidade.Size = new System.Drawing.Size(98, 21);
             this.lbmodalidade.TabIndex = 50;
@@ -142,8 +139,7 @@ namespace projeto_acg.View
             this.lbnome.AutoSize = true;
             this.lbnome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbnome.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbnome.Location = new System.Drawing.Point(189, 165);
-            this.lbnome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbnome.Location = new System.Drawing.Point(252, 203);
             this.lbnome.Name = "lbnome";
             this.lbnome.Size = new System.Drawing.Size(55, 21);
             this.lbnome.TabIndex = 49;
@@ -155,8 +151,7 @@ namespace projeto_acg.View
             this.lbcadastro.AutoSize = true;
             this.lbcadastro.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.lbcadastro.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbcadastro.Location = new System.Drawing.Point(208, 88);
-            this.lbcadastro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbcadastro.Location = new System.Drawing.Point(277, 108);
             this.lbcadastro.Name = "lbcadastro";
             this.lbcadastro.Size = new System.Drawing.Size(239, 37);
             this.lbcadastro.TabIndex = 51;
@@ -171,10 +166,10 @@ namespace projeto_acg.View
             this.btlimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btlimpar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btlimpar.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btlimpar.Location = new System.Drawing.Point(187, 377);
-            this.btlimpar.Margin = new System.Windows.Forms.Padding(2);
+            this.btlimpar.Location = new System.Drawing.Point(249, 464);
+            this.btlimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btlimpar.Name = "btlimpar";
-            this.btlimpar.Size = new System.Drawing.Size(138, 32);
+            this.btlimpar.Size = new System.Drawing.Size(184, 39);
             this.btlimpar.TabIndex = 46;
             this.btlimpar.Text = "LIMPAR";
             this.btlimpar.UseVisualStyleBackColor = false;
@@ -188,10 +183,10 @@ namespace projeto_acg.View
             this.btcadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcadastrar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btcadastrar.ForeColor = System.Drawing.Color.White;
-            this.btcadastrar.Location = new System.Drawing.Point(187, 413);
-            this.btcadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btcadastrar.Location = new System.Drawing.Point(249, 508);
+            this.btcadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btcadastrar.Name = "btcadastrar";
-            this.btcadastrar.Size = new System.Drawing.Size(281, 32);
+            this.btcadastrar.Size = new System.Drawing.Size(375, 39);
             this.btcadastrar.TabIndex = 48;
             this.btcadastrar.Text = "CADASTRAR";
             this.btcadastrar.UseVisualStyleBackColor = false;
@@ -214,10 +209,10 @@ namespace projeto_acg.View
             "Ensino",
             "Políticas",
             "Empreendedorismo e Inovação"});
-            this.cbmodalidade.Location = new System.Drawing.Point(186, 324);
-            this.cbmodalidade.Margin = new System.Windows.Forms.Padding(2);
+            this.cbmodalidade.Location = new System.Drawing.Point(248, 399);
+            this.cbmodalidade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbmodalidade.Name = "cbmodalidade";
-            this.cbmodalidade.Size = new System.Drawing.Size(282, 29);
+            this.cbmodalidade.Size = new System.Drawing.Size(375, 29);
             this.cbmodalidade.TabIndex = 3;
             this.cbmodalidade.Enter += new System.EventHandler(this.tbtipo_Enter);
             this.cbmodalidade.Leave += new System.EventHandler(this.tbtipo_Leave);
@@ -228,30 +223,30 @@ namespace projeto_acg.View
             this.tbnome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbnome.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.tbnome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbnome.Location = new System.Drawing.Point(187, 188);
-            this.tbnome.Margin = new System.Windows.Forms.Padding(2);
+            this.tbnome.Location = new System.Drawing.Point(249, 231);
+            this.tbnome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbnome.MaxLength = 50;
             this.tbnome.Name = "tbnome";
-            this.tbnome.Size = new System.Drawing.Size(281, 29);
+            this.tbnome.Size = new System.Drawing.Size(374, 29);
             this.tbnome.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(512, 88);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(683, 108);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(394, 357);
+            this.pictureBox1.Size = new System.Drawing.Size(525, 439);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 54;
             this.pictureBox1.TabStop = false;
             // 
             // FormCadAcg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 540);
+            this.ClientSize = new System.Drawing.Size(1445, 665);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbnome);
             this.Controls.Add(this.cbmodalidade);
@@ -266,8 +261,8 @@ namespace projeto_acg.View
             this.Controls.Add(this.btlimpar);
             this.Controls.Add(this.btcadastrar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(945, 507);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1255, 615);
             this.Name = "FormCadAcg";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
